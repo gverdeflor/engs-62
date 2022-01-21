@@ -19,10 +19,11 @@
 #include "led.h"							/* led module interface */
 #include "gic.h"							/* interrupt controller interface */
 #include "io.h"								/* button and switch module interface */
+#include "ttc.h"							/* ttc module interface */
 
 #define OUTPUT 0x0							/* setting GPIO direction to output */
 #define CHANNEL1 1							/* channel 1 of the GPIO port */
-
+#define FREQ 1								/* 1Hz frequency for LED4 */
 
 void buffer_read(char str[]) {
 	// Read, save, and echo character until newline
@@ -46,6 +47,11 @@ void mycallback(u32 val) {
 	printf("LED%lu toggled!\n", val);
 }
 
+void ttc_callback(void) {
+	led_toggle(4);
+	printf("LED4 toggled!\n");
+}
+
 int main() {
 
 	/* Initialize hardware platform and I/O	 */
@@ -54,7 +60,8 @@ int main() {
 	led_init();
 	io_btn_init(&mycallback);
 	io_sw_init(&mycallback);
-	led_set(4, LED_ON);
+	ttc_init(FREQ, &ttc_callback);
+	ttc_start();
 
 	 /* 
 		* set stdin unbuffered, forcing getchar to return immediately when
@@ -77,7 +84,7 @@ int main() {
 		if ( (num >= 0) && (num <= 3) && (np != str) ) {
 			// Toggle LEDs
 			led_toggle(num);
-			printf("\nLED%lu toggled!", num);
+			printf("\nLED%d toggled!", num);
 		}
 		printf("\n");
 	} while (strcmp("q",str) != 0);
@@ -86,6 +93,8 @@ int main() {
 	led_set(ALL, LED_OFF);
 	io_btn_close();
 	io_sw_close();
+	ttc_stop();
+	ttc_close();
 	gic_close();
 
 	cleanup_platform();					/* cleanup the hardware platform */

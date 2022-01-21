@@ -1,0 +1,71 @@
+/*
+ * ttc.c
+ *
+ * NOTE: The TTC hardware must be enabled (Timer 0 on the processing system) before it can be used!!
+ *
+ */
+
+#include <stdio.h>
+#include "xttcps.h"
+#include "xparameters.h"  	/* constants used by the hardware */
+#include "xil_types.h"		/* types used by xilinx */
+
+#define FREQ 1				/* 1Hz frequency for LED4 */
+
+static XTtcPs ttcport;		/* timer port instance */
+
+/*
+ * ttc_init -- initialize the ttc frequency and callback
+ */
+void ttc_init(u32 freq, void (*ttc_callback)(void)) {
+
+	freq = FREQ;
+	XInterval interval;
+	u8 prescaler;
+
+	/* initialize ttcport and immediately disable interrupts */
+	XTtcPs_Config *config = XTtcPs_LookupConfig(XPAR_XTTCPS_0_DEVICE_ID);
+	XTtcPs_CfgInitialize(&ttcport, config, config->BaseAddress);
+	XTtcPs_DisableInterrupts(&ttcport, );
+
+	XTtcPs_CalcIntervalFromFreq(&ttcport, freq, &interval, &prescaler);
+	XTtcPs_SetPrescaler(&ttcport, prescaler);
+	XTtcPs_SetInterval(&ttcport, &interval);
+	XTtcPs_SetOptions(&ttcport, XTTCPS_OPTION_INTERVAL_MODE);
+
+	/* connect handler to the gic (c.f. gic.h) */
+	gic_connect(XPAR_XTTCPS_0_INTR, &ttc_handler, &ttcport);
+
+	/* enable interrupts to processor */
+	XTtcPs_EnableInterrupts(&ttcport,);
+
+}
+
+/*
+ * ttc_start -- start the ttc
+ */
+void ttc_start(void) {
+	XTtcPs_Start(&ttcport);
+}
+
+/*
+ * ttc_stop -- stop the ttc
+ */
+void ttc_stop(void) {
+	XTtcPs_Stop(&ttcport);
+}
+
+/*
+ * ttc_close -- close down the ttc
+ */
+void ttc_close(void) {
+
+	XTtcPs_GetInterruptStatus(&ttcport);
+	XTtcPs_ClearInterruptStatus(&ttcport,);
+	XTtcPs_GetCounterValue(&ttcport);
+
+	/* disconnect the interrupts (c.f. gic.h) */
+	gic_disconnect(XPAR_FABRIC_GPIO_1_VEC_ID);
+}
+
+
