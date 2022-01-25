@@ -111,7 +111,6 @@ int main() {
 	//XTmrCtr_Stop(&tmrport, 1);
 	gic_close();
 
-
 	cleanup_platform();					/* cleanup the hardware platform */
 	return 0;
 }
