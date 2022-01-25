@@ -1,0 +1,40 @@
+/*
+ * servo.c
+ */
+
+#include <stdio.h>
+#include "xtmrctr.h"
+#include "xparameters.h"  	/* constants used by the hardware */
+#include "xil_types.h"		/* types used by xilinx */
+
+static XTmrCtr tmrport;		/* AXI timer port instance */
+
+/*
+ * Initialize the servo, setting the duty cycle to 7.5%
+ */
+void servo_init(void) {
+
+	XTmrCtr_Initialize(&tmrport, XPAR_TMRCTR_0_DEVICE_ID);
+	//XTmrCtr_GetOptions();
+	//XTmrCtr_GetValue();
+
+	XTmrCtr_Start(&tmrport, 0);
+	XTmrCtr_Start(&tmrport, 1);
+
+	XTmrCtr_Stop(&tmrport, 0);
+	XTmrCtr_Stop(&tmrport, 1);
+
+}
+
+/*
+ * Set the duty cycle of the servo
+ */
+void servo_set(double dutycycle) {
+
+	XTmrCtr_SetResetValue(&tmrport, 0, 1000000); 	// period = 20ms
+	XTmrCtr_SetResetValue(&tmrport, 1, 75000);		// Thigh = 1.5ms for 7.5% duty cycle
+
+	XTmrCtr_SetOptions(&tmrport, 0, XTC_CSR_ENABLE_PWM_MASK);
+	XTmrCtr_SetOptions(&tmrport, 1, XTC_CSR_ENABLE_PWM_MASK);
+}
+

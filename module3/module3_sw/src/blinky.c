@@ -20,6 +20,7 @@
 #include "gic.h"							/* interrupt controller interface */
 #include "io.h"								/* button and switch module interface */
 #include "ttc.h"							/* ttc module interface */
+#include "servo.h"							/* servo module interface */
 
 #define OUTPUT 0x0							/* setting GPIO direction to output */
 #define CHANNEL1 1							/* channel 1 of the GPIO port */
@@ -49,7 +50,7 @@ void mycallback(u32 val) {
 
 void ttc_callback(void) {
 	led_toggle(4);
-	printf("LED4 toggled!\n");
+	//printf("LED4 toggled!\n");
 }
 
 int main() {
@@ -71,6 +72,8 @@ int main() {
 	 
 	 printf("\n[Hello]\n");
 
+	 servo_init();
+
 	 char str[80];
 	 int num;
 	 char* np;
@@ -87,7 +90,16 @@ int main() {
 			printf("\nLED%d toggled!", num);
 		}
 		printf("\n");
+
+		// Control PWM duty cycle in 0.25% increments
+		if (strcmp("a", str) == 0) {
+			servo_set(servo_get() + 0.25);
+		} else if (strcmp("s", str) == 0) {
+			servo_set(servo_get() - 0.25);
+		}
+
 	} while (strcmp("q",str) != 0);
+
 
 	// Turn off all I/O
 	led_set(ALL, LED_OFF);
@@ -95,7 +107,10 @@ int main() {
 	io_sw_close();
 	ttc_stop();
 	ttc_close();
+	//XTmrCtr_Stop(&tmrport, 0);
+	//XTmrCtr_Stop(&tmrport, 1);
 	gic_close();
+
 
 	cleanup_platform();					/* cleanup the hardware platform */
 	return 0;

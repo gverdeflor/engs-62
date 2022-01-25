@@ -22,3 +22,6 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
+platform active {module3_hw_wrapper}
+bsp reload
+platform generate -domains standalone_ps7_cortexa9_0 
