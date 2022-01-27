@@ -1968,3 +1968,4 @@ con
 
 16:00:25 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module3/module3_sw_system/_ide/scripts/debugger_module3_sw-default.tcl'
 16:13:36 INFO  : Checking for BSP changes to sync application flags for project 'module3_sw'...
+16:20:09 INFO  : Disconnected from the channel tcfchan#3.

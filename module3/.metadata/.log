@@ -8438,3 +8438,9 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-5: Launch
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-01-25 16:13:36.099
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module3/module3_hw_wrapper/export/module3_hw_wrapper/sw/module3_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-25 16:20:09.007
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-265
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-25 16:20:09.015
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-265
