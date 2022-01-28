@@ -50,7 +50,6 @@ void mycallback(u32 val) {
 
 void ttc_callback(void) {
 	led_toggle(4);
-	//printf("LED4 toggled!\n");
 }
 
 int main() {
@@ -82,7 +81,7 @@ int main() {
 	do {
 		buffer_read(str);
 
-		// Check if string is controlling LED 0-4
+		// Control LED 0-4
 		num = (int) strtol(str, &np, 10);
 		if ( (num >= 0) && (num <= 3) && (np != str) ) {
 			// Toggle LEDs
@@ -98,6 +97,13 @@ int main() {
 			servo_set(servo_get() - 0.25);
 		}
 
+		// Control servo drive over 90 degree arc
+		if (strcmp("low", str) == 0) {
+			servo_set(ARC_START_DUTY_CYCLE);
+		} else if (strcmp("high", str) == 0) {
+			servo_set(ARC_STOP_DUTY_CYCLE);
+		}
+
 	} while (strcmp("q",str) != 0);
 
 
@@ -107,8 +113,6 @@ int main() {
 	io_sw_close();
 	ttc_stop();
 	ttc_close();
-	//XTmrCtr_Stop(&tmrport, 0);
-	//XTmrCtr_Stop(&tmrport, 1);
 	gic_close();
 
 	cleanup_platform();					/* cleanup the hardware platform */

@@ -1,6 +1,6 @@
 Nothing to build in platform 'module3_hw_wrapper'
 
-16:13:36 **** Incremental Build of configuration Debug for project module3_sw ****
+13:39:05 **** Incremental Build of configuration Debug for project module3_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -24,6 +24,6 @@ Finished building target: module3_sw.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size module3_sw.elf  |tee "module3_sw.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  72159	   3428	  22896	  98483	  180b3	module3_sw.elf
+  72207	   3428	  22896	  98531	  180e3	module3_sw.elf
 Finished building: module3_sw.elf.size
  
