@@ -182,3 +182,62 @@ con
 
 15:58:01 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
 16:02:51 INFO  : Disconnected from the channel tcfchan#5.
+13:48:54 INFO  : Logs will be stored at '/thayerfs/home/f00436n/engs62/module4/IDE.log'.
+13:48:55 INFO  : Launching XSCT server: xsct -n  -interactive /thayerfs/home/f00436n/engs62/module4/temp_xsdb_launch_script.tcl
+13:48:58 INFO  : Registering command handlers for Vitis TCF services
+13:48:58 INFO  : Platform repository initialization has completed.
+13:49:01 INFO  : XSCT server has started successfully.
+13:49:06 INFO  : Successfully done setting XSCT server connection channel  
+13:49:06 INFO  : plnx-install-location is set to ''
+13:49:06 INFO  : Successfully done query RDI_DATADIR 
+13:49:06 INFO  : Successfully done setting workspace for the tool. 
+13:50:45 INFO  : Checking for BSP changes to sync application flags for project 'module4_sw'...
+13:51:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:51:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+13:51:18 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+13:51:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:51:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C79EA' is selected.
+13:51:29 INFO  : 'jtag frequency' command is executed.
+13:51:29 INFO  : Context for 'APU' is selected.
+13:51:29 INFO  : System reset is completed.
+13:51:32 INFO  : 'after 3000' command is executed.
+13:51:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+13:51:33 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+13:51:33 INFO  : Context for 'APU' is selected.
+13:51:33 INFO  : Hardware design and registers information is loaded from '/thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa'.
+13:51:33 INFO  : 'configparams force-mem-access 1' command is executed.
+13:51:33 INFO  : Context for 'APU' is selected.
+13:51:33 INFO  : Sourcing of '/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl' is done.
+13:51:34 INFO  : 'ps7_init' command is executed.
+13:51:34 INFO  : 'ps7_post_config' command is executed.
+13:51:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:51:34 INFO  : The application '/thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:51:34 INFO  : 'configparams force-mem-access 0' command is executed.
+13:51:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}
+fpga -file /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:51:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:51:34 INFO  : 'con' command is executed.
+13:51:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:51:34 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+13:52:21 INFO  : Disconnected from the channel tcfchan#1.

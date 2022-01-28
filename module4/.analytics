@@ -8,3 +8,7 @@ timestamp=[2022-01-27 15:51:53], mode=BUILD, duration=0:00:00.736, duration_ms=7
 timestamp=[2022-01-27 15:51:56], mode=BUILD, duration=0:00:02.835, duration_ms=2835, data={name=module4_sw, configuration=Debug, clean_build=false}
 timestamp=[2022-01-27 15:56:38], mode=PLATFORM_GENERATION, duration=0:00:35.831, duration_ms=35831, data={name=module4_hw_wrapper}
 timestamp=[2022-01-27 15:56:45], mode=BUILD, duration=0:00:04.245, duration_ms=4245, data={name=module4_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-01-28 13:48:57], mode=WORKBENCH_START, duration=0:00:08.634, duration_ms=8634, data={}
+timestamp=[2022-01-28 13:48:58], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.545, duration_ms=545, data={}
+timestamp=[2022-01-28 13:48:58], mode=WORKBENCH_UI_INIT, duration=0:00:01.479, duration_ms=1479, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,module4_hw_wrapper,module4_sw,module4_sw_system}
+timestamp=[2022-01-28 13:50:50], mode=BUILD, duration=0:00:02.577, duration_ms=2577, data={name=module4_sw, configuration=Debug, clean_build=false}
