@@ -1,0 +1,51 @@
+/*
+ * adc.c
+ */
+
+#include <adc.h>			/* servo module interface */
+
+static XAdcPS adcport;		/* ADC port instance */
+
+/*
+ * initialize the adc module
+ */
+void adc_init(void) {
+	// Initialize ADC
+	XAdcPs_Config *config = XAdcPs_LookupConfig(XPAR_XADCPS_0_DEVICE_ID);
+	XAdcPs_CfgInitialize(&adcport, config, config->BaseAddress);
+	XAdcPs_SelfTest(adcport);
+
+	// Set channel sequencer mode to 'Safe' and disable alarms
+	XAdcPs_SetSequencerMode(&adcport, );
+	XAdcPs_SetAlarmEnables();
+
+
+	XAdcPs_SetSeqChEnables();
+
+}
+
+/*
+ * get the internal temperature in degree's centigrade
+ */
+float adc_get_temp(void) {
+	float temp;
+
+	XAdcPs_GetAdcData();
+	XAdcPs_RawtToTemperature();
+
+	return temp;
+}
+
+/*
+ * get the internal vcc voltage (should be ~1.0v)
+ */
+float adc_get_vccint(void) {
+
+}
+
+/*
+ * get the **corrected** potentiometer voltage (should be between 0 and 1v)
+ */
+float adc_get_pot(void) {
+
+}

@@ -46,7 +46,7 @@ u32 btn_to_led(u32 btn) {
 		curr_LED = 3;
 		break;
 	default:
-		printf("\nInvalid button!", btn);
+		printf("\n");
 	}
 	return curr_LED;
 }

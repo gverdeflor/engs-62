@@ -21,6 +21,7 @@
 #include "io.h"								/* button and switch module interface */
 #include "ttc.h"							/* ttc module interface */
 #include "servo.h"							/* servo module interface */
+#include "adc.h"							/* ADC module interface */
 
 #define OUTPUT 0x0							/* setting GPIO direction to output */
 #define CHANNEL1 1							/* channel 1 of the GPIO port */
@@ -46,6 +47,13 @@ void buffer_read(char str[]) {
 void mycallback(u32 val) {
 	led_toggle(val);
 	printf("LED%lu toggled!\n", val);
+
+	// Print value of internal temperature when button 0 pressed
+	if (val == 0) {
+		float temp = adc_get_temp();
+		printf("Temperature: %4.2f\n", temp);
+		fflush(stdout);
+	}
 }
 
 void ttc_callback(void) {
@@ -62,6 +70,7 @@ int main() {
 	io_sw_init(&mycallback);
 	ttc_init(FREQ, &ttc_callback);
 	ttc_start();
+	adc_init();
 
 	 /* 
 		* set stdin unbuffered, forcing getchar to return immediately when
