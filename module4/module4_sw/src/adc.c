@@ -45,7 +45,9 @@ float adc_get_temp(void) {
  * get the internal vcc voltage (should be ~1.0v)
  */
 float adc_get_vccint(void) {
-
+	u16 raw = XAdcPs_GetAdcData(&adcport, XADCPS_CH_VCCINT);
+	float volt = XAdcPs_RawToVoltage(raw);
+	return volt;
 }
 
 /*

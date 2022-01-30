@@ -45,18 +45,27 @@ void buffer_read(char str[]) {
 }
 
 void mycallback(u32 val) {
+	// Toggle LED 0-3 based on button and switch input
 	led_toggle(val);
 	printf("LED%lu toggled!\n", val);
 
-	// Print value of internal temperature when button 0 pressed
+	// Display internal temperature when button 0 pressed
 	if (val == 0) {
 		float temp = adc_get_temp();
 		printf("Temperature: %4.2f\n", temp);
 		fflush(stdout);
 	}
+
+	// Display internal voltage when button 1 pressed
+	if (val == 1) {
+		float volt = adc_get_vccint();
+		printf("VccInt: %3.2f\n", volt);
+		fflush(stdout);
+	}
 }
 
 void ttc_callback(void) {
+	// Toggle LED 4 every second
 	led_toggle(4);
 }
 
