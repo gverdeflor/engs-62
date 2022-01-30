@@ -52,21 +52,14 @@ void mycallback(u32 val) {
 	// Display internal temperature when button 0 pressed
 	if (val == 0) {
 		float temp = adc_get_temp();
-		printf("[Temperature=%4.2f]\n", temp);
+		printf("Temperature: %4.2f\n", temp);
 		fflush(stdout);
 	}
 
 	// Display internal voltage when button 1 pressed
 	if (val == 1) {
 		float volt = adc_get_vccint();
-		printf("[VccInt=%3.2f]\n", volt);
-		fflush(stdout);
-	}
-
-	// Display potentiometer voltage when button 2 pressed
-	if (val == 2) {
-		float pot = adc_get_pot();
-		printf("[Pot=%3.2f]\n", pot);
+		printf("VccInt: %3.2f\n", volt);
 		fflush(stdout);
 	}
 }

@@ -728,3 +728,4 @@ con
 ----------------End of Script----------------
 
 13:49:18 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+14:01:50 INFO  : Checking for BSP changes to sync application flags for project 'module4_sw'...

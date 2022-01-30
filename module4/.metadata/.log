@@ -19442,3 +19442,27 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-43: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 13:49:18.642
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-43: Launching Debugger_module4_sw-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 14:01:50.014
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-61: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 14:01:50.028
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-61: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 14:01:50.034
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-61: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 14:01:50.041
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-61: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-01-30 14:01:50.047
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 14:01:50.063
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-61: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-30 14:01:50.069
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/sw/module4_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-61: Build Project
