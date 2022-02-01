@@ -54,7 +54,8 @@ float adc_get_vccint(void) {
  * get the **corrected** potentiometer voltage (should be between 0 and 1v)
  */
 float adc_get_pot(void) {
-	u16 raw = XAdcPs_GetAdcData(&adcport, XADCPS_CH_VCCAUX);
-	float pot = XAdcPs_RawToVoltage(raw);
+	u16 raw = XAdcPs_GetAdcData(&adcport, XADCPS_CH_AUX_MAX-1);
+	float scale = 2.88;	 // potentiometer max voltage
+	float pot = XAdcPs_RawToVoltage(raw) / scale;
 	return pot;
 }
