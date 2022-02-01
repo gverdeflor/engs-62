@@ -1551,3 +1551,237 @@ con
 ----------------End of Script----------------
 
 15:34:29 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+15:39:36 INFO  : Disconnected from the channel tcfchan#16.
+15:39:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C79EA' is selected.
+15:39:38 INFO  : 'jtag frequency' command is executed.
+15:39:38 INFO  : Context for 'APU' is selected.
+15:39:38 INFO  : System reset is completed.
+15:39:41 INFO  : 'after 3000' command is executed.
+15:39:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+15:39:42 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+15:39:42 INFO  : Context for 'APU' is selected.
+15:39:45 INFO  : Hardware design and registers information is loaded from '/thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa'.
+15:39:45 INFO  : 'configparams force-mem-access 1' command is executed.
+15:39:45 INFO  : Context for 'APU' is selected.
+15:39:45 INFO  : Sourcing of '/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl' is done.
+15:39:45 INFO  : 'ps7_init' command is executed.
+15:39:45 INFO  : 'ps7_post_config' command is executed.
+15:39:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:45 INFO  : The application '/thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:39:45 INFO  : 'configparams force-mem-access 0' command is executed.
+15:39:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}
+fpga -file /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:39:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:45 INFO  : 'con' command is executed.
+15:39:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:39:45 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+15:45:57 INFO  : Checking for BSP changes to sync application flags for project 'module4_sw'...
+15:47:15 INFO  : Checking for BSP changes to sync application flags for project 'module4_sw'...
+15:47:24 INFO  : Disconnected from the channel tcfchan#17.
+15:47:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C79EA' is selected.
+15:47:25 INFO  : 'jtag frequency' command is executed.
+15:47:25 INFO  : Context for 'APU' is selected.
+15:47:25 INFO  : System reset is completed.
+15:47:28 INFO  : 'after 3000' command is executed.
+15:47:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+15:47:29 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+15:47:29 INFO  : Context for 'APU' is selected.
+15:47:32 INFO  : Hardware design and registers information is loaded from '/thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa'.
+15:47:32 INFO  : 'configparams force-mem-access 1' command is executed.
+15:47:32 INFO  : Context for 'APU' is selected.
+15:47:32 INFO  : Sourcing of '/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl' is done.
+15:47:32 INFO  : 'ps7_init' command is executed.
+15:47:32 INFO  : 'ps7_post_config' command is executed.
+15:47:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:33 INFO  : The application '/thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:47:33 INFO  : 'configparams force-mem-access 0' command is executed.
+15:47:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}
+fpga -file /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:47:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:33 INFO  : 'con' command is executed.
+15:47:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:47:33 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+15:48:01 INFO  : Disconnected from the channel tcfchan#18.
+15:48:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:48:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C79EA' is selected.
+15:48:02 INFO  : 'jtag frequency' command is executed.
+15:48:03 INFO  : Context for 'APU' is selected.
+15:48:03 INFO  : System reset is completed.
+15:48:06 INFO  : 'after 3000' command is executed.
+15:48:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+15:48:07 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+15:48:07 INFO  : Context for 'APU' is selected.
+15:48:09 INFO  : Hardware design and registers information is loaded from '/thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa'.
+15:48:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:48:09 INFO  : Context for 'APU' is selected.
+15:48:09 INFO  : Sourcing of '/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl' is done.
+15:48:10 INFO  : 'ps7_init' command is executed.
+15:48:10 INFO  : 'ps7_post_config' command is executed.
+15:48:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:10 INFO  : The application '/thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:48:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:48:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}
+fpga -file /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:10 INFO  : 'con' command is executed.
+15:48:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:48:10 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+15:52:59 INFO  : Checking for BSP changes to sync application flags for project 'module4_sw'...
+15:53:08 INFO  : Disconnected from the channel tcfchan#19.
+15:53:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C79EA' is selected.
+15:53:10 INFO  : 'jtag frequency' command is executed.
+15:53:10 INFO  : Context for 'APU' is selected.
+15:53:10 INFO  : System reset is completed.
+15:53:13 INFO  : 'after 3000' command is executed.
+15:53:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+15:53:14 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+15:53:14 INFO  : Context for 'APU' is selected.
+15:53:17 INFO  : Hardware design and registers information is loaded from '/thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa'.
+15:53:17 INFO  : 'configparams force-mem-access 1' command is executed.
+15:53:17 INFO  : Context for 'APU' is selected.
+15:53:17 INFO  : Sourcing of '/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl' is done.
+15:53:17 INFO  : 'ps7_init' command is executed.
+15:53:17 INFO  : 'ps7_post_config' command is executed.
+15:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:53:17 INFO  : The application '/thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:53:17 INFO  : 'configparams force-mem-access 0' command is executed.
+15:53:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}
+fpga -file /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:53:17 INFO  : 'con' command is executed.
+15:53:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:53:17 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'
+15:59:11 INFO  : Checking for BSP changes to sync application flags for project 'module4_sw'...
+15:59:18 INFO  : Disconnected from the channel tcfchan#20.
+15:59:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6C79EA' is selected.
+15:59:19 INFO  : 'jtag frequency' command is executed.
+15:59:19 INFO  : Context for 'APU' is selected.
+15:59:19 INFO  : System reset is completed.
+15:59:22 INFO  : 'after 3000' command is executed.
+15:59:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}' command is executed.
+15:59:23 INFO  : Device configured successfully with "/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit"
+15:59:23 INFO  : Context for 'APU' is selected.
+15:59:26 INFO  : Hardware design and registers information is loaded from '/thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa'.
+15:59:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:59:26 INFO  : Context for 'APU' is selected.
+15:59:26 INFO  : Sourcing of '/thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl' is done.
+15:59:27 INFO  : 'ps7_init' command is executed.
+15:59:27 INFO  : 'ps7_post_config' command is executed.
+15:59:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:27 INFO  : The application '/thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:59:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:59:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}
+fpga -file /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/bitstream/module4_hw_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /thayerfs/home/f00436n/engs62/module4/module4_hw_wrapper/export/module4_hw_wrapper/hw/module4_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /thayerfs/home/f00436n/engs62/module4/module4_sw/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /thayerfs/home/f00436n/engs62/module4/module4_sw/Debug/module4_sw.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:59:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:27 INFO  : 'con' command is executed.
+15:59:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:59:27 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module4/module4_sw_system/_ide/scripts/debugger_module4_sw-default.tcl'

@@ -69,6 +69,23 @@ void mycallback(u32 val) {
 		printf("[Pot=%3.2f]\n", pot);
 		fflush(stdout);
 	}
+
+	// Drive PWM duty cycle with pot voltage when button 3 pressed
+	if (val == 3) {
+		float pot_volt = adc_get_pot();
+		double pot_pwm = (pot_volt * 4.75) + 7;
+
+		// Caps PWM duty cycle to mechanical limits
+		if (pot_pwm > ARC_STOP_DUTY_CYCLE) {
+			pot_pwm = ARC_STOP_DUTY_CYCLE;
+		} else if (pot_pwm < ARC_START_DUTY_CYCLE) {
+			pot_pwm = ARC_START_DUTY_CYCLE;
+		}
+
+		servo_set(pot_pwm);
+		printf("[Pot=%3.2f]\n", pot_volt);
+		fflush(stdout);
+	}
 }
 
 void ttc_callback(void) {
