@@ -20,3 +20,7 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform active {module5_hw_wrapper}
+platform config -updatehw {/thayerfs/home/f00436n/engs62/module5/module5/module5_hw_wrapper.xsa}
+platform clean
+platform generate
