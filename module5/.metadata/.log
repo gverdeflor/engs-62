@@ -3458,3 +3458,1386 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-67: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:16:25.448
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-67: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.400
+!MESSAGE XSCT Command: [disconnect tcfchan#18], Thread: Thread-1471
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.408
+!MESSAGE XSCT command with result: [disconnect tcfchan#18], Result: [null, ]. Thread: Thread-1471
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.424
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.454
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#19]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.460
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.478
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.482
+!MESSAGE XSCT Command: [version -server], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.488
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.493
+!MESSAGE XSCT Command: [version], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.498
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.505
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.516
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.530
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.556
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.561
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.571
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.577
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.600
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.605
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.615
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.624
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.651
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.656
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.667
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.672
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.695
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.701
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.713
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.719
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.746
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.753
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.765
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.771
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.794
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.800
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.825
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.831
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.839
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.847
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.867
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.872
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.938
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:49.944
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:51.965
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-73: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:52.954
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:52.975
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.921
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-73: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.927
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.933
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-73: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.938
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.944
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-73: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:26:55.950
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.958
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-73: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.969
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.975
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-73: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:55.982
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:56.020
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:56.026
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-02-10 15:26:57.134
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.235
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.270
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.288
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.294
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.386
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_16]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.392
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.397
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.403
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.418
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.430
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.438
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.443
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.740
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.746
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.758
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.763
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.786
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:57.791
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.007
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.012
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.027
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.041
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.054
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.059
+!MESSAGE XSCT Command: [con], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:26:58.081
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:27:38.679
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-64: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:27:38.691
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-64: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:27:38.700
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-64: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:27:38.711
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-64: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:27:38.727
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:27:38.739
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-64: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:27:38.746
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-64: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-02-10 15:27:39.810
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:46.672
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-75: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:46.684
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-75: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:46.690
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-75: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:46.698
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-75: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:28:46.703
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:46.712
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-75: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:46.718
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-75: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:56.821
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-77: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:56.833
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-77: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:56.839
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-77: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:56.848
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-77: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:28:56.853
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:56.861
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-77: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:28:56.867
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-77: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.119
+!MESSAGE XSCT Command: [disconnect tcfchan#19], Thread: Thread-1608
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.130
+!MESSAGE XSCT command with result: [disconnect tcfchan#19], Result: [null, ]. Thread: Thread-1608
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.139
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.170
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#20]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.185
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.199
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.204
+!MESSAGE XSCT Command: [version -server], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.210
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.216
+!MESSAGE XSCT Command: [version], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.221
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.227
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.239
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.245
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.273
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.280
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.296
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.317
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.323
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.335
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.340
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.359
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.365
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.374
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.379
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.399
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.406
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.424
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.429
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.451
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.457
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.470
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.476
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.494
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.499
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.522
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.530
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.537
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.544
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.561
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.566
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.628
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:00.635
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.647
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.669
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.679
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.684
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.703
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.710
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.746
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:03.751
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:04.965
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:04.988
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:05.002
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:05.007
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.650
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_17]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.656
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.664
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.674
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.693
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.700
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.710
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:07.715
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.001
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.007
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.022
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.027
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.045
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.050
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.269
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.277
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.304
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.320
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.333
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.339
+!MESSAGE XSCT Command: [con], Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:08.363
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-75: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:35.224
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:35.239
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:35.244
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:35.251
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:29:35.257
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:35.265
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:35.271
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:54.390
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:54.399
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:54.404
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:54.411
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:29:54.416
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:54.424
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:54.429
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:57.951
+!MESSAGE XSCT Command: [disconnect tcfchan#20], Thread: Thread-1694
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:57.959
+!MESSAGE XSCT command with result: [disconnect tcfchan#20], Result: [null, ]. Thread: Thread-1694
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:57.975
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:57.998
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#21]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.003
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.016
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.021
+!MESSAGE XSCT Command: [version -server], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.027
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.033
+!MESSAGE XSCT Command: [version], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.038
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.053
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.063
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.068
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.087
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.095
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.107
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.112
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.142
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.149
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.160
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.166
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.190
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.194
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.206
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.210
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.231
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.237
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.249
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.254
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.274
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.280
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.296
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.326
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.331
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.353
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.359
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.364
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.369
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.386
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.391
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.452
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:29:58.457
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.467
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.491
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.503
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.514
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.533
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.538
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.573
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:01.580
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:02.791
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:02.817
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:02.831
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:02.837
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.625
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_18]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.683
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.695
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.876
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.894
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.900
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.911
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:05.916
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.202
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.211
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.229
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.236
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.252
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.260
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.489
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.496
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.524
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.539
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.559
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:06.817
+!MESSAGE XSCT Command: [con], Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:30:07.071
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-71: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:38.040
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:38.052
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:38.058
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:38.070
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:31:38.076
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:38.087
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:38.093
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-66: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.878
+!MESSAGE XSCT Command: [disconnect tcfchan#21], Thread: Thread-1763
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.888
+!MESSAGE XSCT command with result: [disconnect tcfchan#21], Result: [null, ]. Thread: Thread-1763
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.906
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.927
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#22]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.933
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.952
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.964
+!MESSAGE XSCT Command: [version -server], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.981
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:46.988
+!MESSAGE XSCT Command: [version], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.010
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.019
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.037
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.075
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.106
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.114
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.127
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.136
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.166
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.172
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.186
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.203
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.232
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.242
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.256
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.263
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.287
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.293
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.306
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.314
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.356
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.365
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.375
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.380
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.404
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.409
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.431
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.438
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.445
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.452
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.473
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.480
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.543
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:47.549
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.561
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.585
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.594
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.601
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.633
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.639
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.675
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:50.682
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:51.898
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:51.920
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:51.947
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:51.953
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.851
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_19]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.857
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.873
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.880
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.921
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.928
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.941
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:54.947
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.209
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.214
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.227
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.233
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.250
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.255
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.482
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.493
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.514
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.531
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.548
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.554
+!MESSAGE XSCT Command: [con], Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:55.583
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-77: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.829
+!MESSAGE XSCT Command: [disconnect tcfchan#22], Thread: Thread-1812
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.838
+!MESSAGE XSCT command with result: [disconnect tcfchan#22], Result: [null, ]. Thread: Thread-1812
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.858
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.878
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#23]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.884
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.899
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.904
+!MESSAGE XSCT Command: [version -server], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.910
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.915
+!MESSAGE XSCT Command: [version], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.922
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.927
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.937
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.943
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.964
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.969
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.982
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:31:59.986
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.014
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.019
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.029
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.038
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.060
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.078
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.086
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.111
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.117
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.131
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.146
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.171
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.202
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.208
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.233
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.240
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.267
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.275
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.283
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.290
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.313
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.320
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.382
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:00.387
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.394
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.420
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.430
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.435
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.454
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.460
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.499
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:03.505
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:04.717
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:04.735
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:04.748
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:04.757
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.435
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_20]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.456
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.466
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.474
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.495
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.500
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.516
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.523
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.818
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.823
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.835
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.840
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.866
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:07.873
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.104
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.116
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.130
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.144
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.169
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.191
+!MESSAGE XSCT Command: [con], Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:32:08.227
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-79: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:39:43.098
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-83: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:39:43.111
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-83: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:39:43.120
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-83: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:39:43.131
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-83: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-02-10 15:39:43.153
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:39:43.163
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-83: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-02-10 15:39:43.170
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-83: Build Project
