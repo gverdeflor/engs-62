@@ -32,6 +32,10 @@ static XUartPs uart0port; 					/* UART0 port instance */
 static XUartPs uart1port; 					/* UART1 port instance */
 static bool done = false;					/* UART interrupt status */
 
+#define CONFIGURE 0
+#define PING 1
+#define UPDATE 2
+
 //void buffer_read(char str[]) {
 //	// Read, save, and echo character until newline
 //	int i = 0;
@@ -111,7 +115,7 @@ void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 	// Check if receive data has been triggered
 	if (Event == XUARTPS_EVENT_RECV_DATA) {
 		XUartPs_Recv(dev, &charbuff, 1);
-		XUartPs_Send(dev, &charbuff, 1);
+		//XUartPs_Send(dev, &charbuff, 1);
 		XUartPs_Send(&uart0port, &charbuff, 1);
 
 		// Send a newline when carriage return is received
@@ -225,6 +229,8 @@ int main() {
 //	ttc_close();
 	XUartPs_DisableUart(&uart1port);
 	XUartPs_DisableUart(&uart0port);
+	gic_disconnect(XPAR_XUARTPS_0_INTR);
+	gic_disconnect(XPAR_XUARTPS_1_INTR);
 	gic_close();
 
 	cleanup_platform();					/* cleanup the hardware platform */

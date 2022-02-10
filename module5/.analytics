@@ -47,3 +47,15 @@ timestamp=[2022-02-08 16:14:45], mode=BUILD, duration=0:00:00.712, duration_ms=7
 timestamp=[2022-02-08 16:18:24], mode=PLATFORM_GENERATION, duration=0:03:25.547, duration_ms=205547, data={name=module5_hw_wrapper}
 timestamp=[2022-02-08 16:18:32], mode=BUILD, duration=0:00:04.799, duration_ms=4799, data={name=module5_sw, configuration=Debug, clean_build=false}
 timestamp=[2022-02-08 16:18:42], mode=BUILD, duration=0:00:02.204, duration_ms=2204, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:03:51], mode=WORKBENCH_START, duration=0:00:25.959, duration_ms=25959, data={}
+timestamp=[2022-02-10 14:03:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.552, duration_ms=552, data={}
+timestamp=[2022-02-10 14:03:53], mode=WORKBENCH_UI_INIT, duration=0:00:02.035, duration_ms=2035, data={editors_count=6, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,module5_hw_wrapper,module5_sw,module5_sw_system}
+timestamp=[2022-02-10 14:05:25], mode=BUILD, duration=0:00:00.950, duration_ms=950, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:08:15], mode=BUILD, duration=0:00:03.090, duration_ms=3090, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:08:44], mode=BUILD, duration=0:00:01.873, duration_ms=1873, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:17:58], mode=BUILD, duration=0:00:01.877, duration_ms=1877, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:20:25], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:28:31], mode=BUILD, duration=0:00:01.895, duration_ms=1895, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:38:05], mode=BUILD, duration=0:00:01.883, duration_ms=1883, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:43:52], mode=BUILD, duration=0:00:00.744, duration_ms=744, data={name=module5_sw, configuration=Debug, clean_build=false}
+timestamp=[2022-02-10 14:44:06], mode=BUILD, duration=0:00:12.575, duration_ms=12575, data={name=module5_sw_system, configuration=Debug, clean_build=false}
