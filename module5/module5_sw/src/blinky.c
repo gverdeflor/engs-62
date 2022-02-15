@@ -28,7 +28,18 @@
 static XUartPs uart0port; 					/* UART0 port instance */
 static XUartPs uart1port; 					/* UART1 port instance */
 static bool done = false;					/* UART interrupt status */
-static int mode = CONFIGURE;				/* Wi-Fi module operation mode */
+static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
+
+typedef struct {
+	int type;		// must be assigned to PING
+	int id;			// must be assigned to class ID
+} ping_t;
+
+void send_ping(ping_t ping) {
+	ping.type = PING;
+	ping.id = 25;
+	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
+}
 
 void mycallback(u32 val) {
 	// Toggle LED 0-3 based on button and switch input
@@ -38,18 +49,19 @@ void mycallback(u32 val) {
 
 	if (val == 0) {
 		// Enter CONFIGURE mode when button 0 pressed
-		mode = CONFIGURE;
-		printf("Mode: %d\n", mode);
+		wifi_mode = CONFIGURE;
 		printf("< allows entry to wifi cmd mode >\n");
 	} else if (val == 1) {
 		// Enter PING mode when button 1 pressed
-		mode = PING;
-		printf("Mode: %d\n", mode);
+		wifi_mode = PING;
 		printf("[PING]\n");
+
+		ping_t ping;
+		send_ping(ping);
+
 	} else if (val == 2) {
 		// Enter UPDATE mode when button 2 pressed
-		mode = UPDATE;
-		printf("Mode: %d\n", mode);
+		wifi_mode = UPDATE;
 		printf("[UPDATE]\n");
 	} else if (val == 3) {
 		// Disconnect UART when button 3 pressed
