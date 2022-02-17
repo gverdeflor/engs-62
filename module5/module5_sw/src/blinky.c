@@ -25,21 +25,32 @@
 #define PING 1
 #define UPDATE 2
 
+typedef struct {
+	int type;			// must be assigned to PING
+	int id;				// must be assigned to class ID
+} ping_t;
+
+typedef struct {
+	int type;			// must be assigned to UPDATE
+	int id;				// must be assigned to class ID
+	int value;			// must be assigned to some value
+} update_request_t;
+
+typedef struct {
+	int type;			// must be assigned to UPDATE
+	int id;				// must be assigned to class ID
+	int average;		// average value from all class WiFi module
+	int values[30];		// array of last update value from WiFi module
+} update_response_t;
+
 static XUartPs uart0port; 					/* UART0 port instance */
 static XUartPs uart1port; 					/* UART1 port instance */
 static bool done = false;					/* UART interrupt status */
 static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
 
-typedef struct {
-	int type;		// must be assigned to PING
-	int id;			// must be assigned to class ID
-} ping_t;
-
-typedef struct {
-	int type;		// must be assigned to UPDATE
-	int id;			// must be assigned to class ID
-	int value;		// must be assigned to some value
-} update_request_t;
+static int buffcount = 0;
+static u8 pingbuff[sizeof(ping_t)];
+static u8* buffptr = pingbuff;
 
 void send_ping(ping_t ping) {
 	ping.type = PING;
@@ -47,25 +58,11 @@ void send_ping(ping_t ping) {
 	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
 }
 
-void send_update(update_request_t update) {
-	update.type = UPDATE;
-	update.id = 25;
-	update.value = 1000;
-	XUartPs_Send(&uart0port, (u8*) &update, sizeof(update_request_t));
-}
-
-u8 receive_ping(void) {
-	u8 pingbuff;
-	XUartPs_Recv(&uart1port, &pingbuff, sizeof(ping_t));
-	printf("Ping Buffer: %d\n", pingbuff);
-	return pingbuff;
-}
-
-u8 receive_update(void) {
-	u8 updatebuff;
-	XUartPs_Recv(&uart1port, &updatebuff, sizeof(update_request_t));
-	printf("Update Buffer: %d\n", updatebuff);
-	return updatebuff;
+void send_update(update_request_t update_request) {
+	update_request.type = UPDATE;
+	update_request.id = 25;
+	update_request.value = 1000;
+	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
 }
 
 void mycallback(u32 val) {
@@ -81,23 +78,14 @@ void mycallback(u32 val) {
 	} else if (val == 1) {
 		// Enter PING mode when button 1 pressed
 		wifi_mode = PING;
-		printf("[PING]\n");
-
 		ping_t ping;
 		send_ping(ping);
-		u8 pingbuff = receive_ping();
-		printf("Ping message: %d\n", pingbuff);
-
 	} else if (val == 2) {
 		// Enter UPDATE mode when button 2 pressed
 		wifi_mode = UPDATE;
 		printf("[UPDATE]\n");
-
 		update_request_t update;
 		send_update(update);
-		u8 updatebuff = receive_update();
-		printf("Update message: %d\n", updatebuff);
-
 	} else if (val == 3) {
 		// Disconnect UART when button 3 pressed
 		done = true;
@@ -133,7 +121,21 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 	// Check if receive data has been triggered
 	if (Event == XUARTPS_EVENT_RECV_DATA) {
 		XUartPs_Recv(dev, &charbuff, 1);
-		XUartPs_Send(&uart1port, &charbuff, 1);
+
+		// Echo back if in configure mode
+		if (wifi_mode == CONFIGURE) {
+			XUartPs_Send(&uart1port, &charbuff, 1);\
+		}
+
+		// Receiving ping message from server
+		if (wifi_mode == PING) {
+			pingbuff[buffcount] = charbuff;
+			buffcount++;
+			if (buffcount == sizeof(ping_t)) {
+				buffcount = 0;
+				printf("[PING,id=%d]\n", ((ping_t*)pingbuff)->id);
+			}
+		}
 	}
 }
 
