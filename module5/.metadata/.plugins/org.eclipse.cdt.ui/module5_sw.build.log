@@ -1,4 +1,4 @@
-16:02:16 **** Incremental Build of configuration Debug for project module5_sw ****
+13:27:13 **** Incremental Build of configuration Debug for project module5_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,8 +8,8 @@ Building file: ../src/blinky.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinky.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/blinky.d" -MT"src/blinky.o" -o "src/blinky.o" "../src/blinky.c"
 ../src/blinky.c: In function 'main':
-../src/blinky.c:145:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-  145 |   sleep(1);
+../src/blinky.c:180:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  180 |   sleep(1);
       |   ^~~~~
 Finished building: ../src/blinky.c
  
@@ -21,9 +21,9 @@ Finished building target: module5_sw.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size module5_sw.elf  |tee "module5_sw.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  69771	   3412	  22944	  96127	  1777f	module5_sw.elf
+  70171	   3412	  22944	  96527	  1790f	module5_sw.elf
 Finished building: module5_sw.elf.size
  
 
-16:02:18 Build Finished (took 1s.581ms)
+13:27:15 Build Finished (took 1s.877ms)
 

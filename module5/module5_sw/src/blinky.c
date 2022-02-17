@@ -35,10 +35,37 @@ typedef struct {
 	int id;			// must be assigned to class ID
 } ping_t;
 
+typedef struct {
+	int type;		// must be assigned to UPDATE
+	int id;			// must be assigned to class ID
+	int value;		// must be assigned to some value
+} update_request_t;
+
 void send_ping(ping_t ping) {
 	ping.type = PING;
 	ping.id = 25;
 	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
+}
+
+void send_update(update_request_t update) {
+	update.type = UPDATE;
+	update.id = 25;
+	update.value = 1000;
+	XUartPs_Send(&uart0port, (u8*) &update, sizeof(update_request_t));
+}
+
+u8 receive_ping(void) {
+	u8 pingbuff;
+	XUartPs_Recv(&uart1port, &pingbuff, sizeof(ping_t));
+	printf("Ping Buffer: %d\n", pingbuff);
+	return pingbuff;
+}
+
+u8 receive_update(void) {
+	u8 updatebuff;
+	XUartPs_Recv(&uart1port, &updatebuff, sizeof(update_request_t));
+	printf("Update Buffer: %d\n", updatebuff);
+	return updatebuff;
 }
 
 void mycallback(u32 val) {
@@ -58,11 +85,19 @@ void mycallback(u32 val) {
 
 		ping_t ping;
 		send_ping(ping);
+		u8 pingbuff = receive_ping();
+		printf("Ping message: %d\n", pingbuff);
 
 	} else if (val == 2) {
 		// Enter UPDATE mode when button 2 pressed
 		wifi_mode = UPDATE;
 		printf("[UPDATE]\n");
+
+		update_request_t update;
+		send_update(update);
+		u8 updatebuff = receive_update();
+		printf("Update message: %d\n", updatebuff);
+
 	} else if (val == 3) {
 		// Disconnect UART when button 3 pressed
 		done = true;
