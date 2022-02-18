@@ -50,7 +50,7 @@ static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
 
 static int buffcount = 0;
 static u8 pingbuff[sizeof(ping_t)];
-static u8* buffptr = pingbuff;
+static u8 updatebuff[sizeof(update_response_t)];
 
 void send_ping(ping_t ping) {
 	ping.type = PING;
@@ -83,7 +83,6 @@ void mycallback(u32 val) {
 	} else if (val == 2) {
 		// Enter UPDATE mode when button 2 pressed
 		wifi_mode = UPDATE;
-		printf("[UPDATE]\n");
 		update_request_t update;
 		send_update(update);
 	} else if (val == 3) {
@@ -122,18 +121,24 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 	if (Event == XUARTPS_EVENT_RECV_DATA) {
 		XUartPs_Recv(dev, &charbuff, 1);
 
-		// Echo back if in configure mode
 		if (wifi_mode == CONFIGURE) {
+			// Echo back keyboard input if in configure mode
 			XUartPs_Send(&uart1port, &charbuff, 1);\
-		}
-
-		// Receiving ping message from server
-		if (wifi_mode == PING) {
+		} else if (wifi_mode == PING) {
+			//	Display decoded ping message from server
 			pingbuff[buffcount] = charbuff;
 			buffcount++;
 			if (buffcount == sizeof(ping_t)) {
 				buffcount = 0;
 				printf("[PING,id=%d]\n", ((ping_t*)pingbuff)->id);
+			}
+		} else if (wifi_mode == UPDATE) {
+			// Display decoded update message from server
+			updatebuff[buffcount] = charbuff;
+			buffcount++;
+			if (buffcount == sizeof(update_response_t)) {
+				buffcount = 0;
+				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
 			}
 		}
 	}

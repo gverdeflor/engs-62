@@ -1,4 +1,4 @@
-16:55:55 **** Incremental Build of configuration Debug for project module5_sw ****
+14:29:24 **** Incremental Build of configuration Debug for project module5_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,13 +8,9 @@ Building file: ../src/blinky.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinky.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/blinky.d" -MT"src/blinky.o" -o "src/blinky.o" "../src/blinky.c"
 ../src/blinky.c: In function 'main':
-../src/blinky.c:182:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-  182 |   sleep(1);
+../src/blinky.c:187:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  187 |   sleep(1);
       |   ^~~~~
-At top level:
-../src/blinky.c:53:12: warning: 'buffptr' defined but not used [-Wunused-variable]
-   53 | static u8* buffptr = pingbuff;
-      |            ^~~~~~~
 Finished building: ../src/blinky.c
  
 Building target: module5_sw.elf
@@ -25,9 +21,9 @@ Finished building target: module5_sw.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size module5_sw.elf  |tee "module5_sw.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  70035	   3412	  22960	  96407	  17897	module5_sw.elf
+  70187	   3412	  23088	  96687	  179af	module5_sw.elf
 Finished building: module5_sw.elf.size
  
 
-16:55:57 Build Finished (took 1s.782ms)
+14:29:26 Build Finished (took 1s.775ms)
 
