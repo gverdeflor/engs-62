@@ -103,6 +103,10 @@ set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_axi_gpio_2_0/module5_hw_axi_gpio_2_0_board.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_axi_gpio_2_0/module5_hw_axi_gpio_2_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_axi_gpio_2_0/module5_hw_axi_gpio_2_0.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_axi_timer_0_0/module5_hw_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_axi_timer_0_0/module5_hw_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_xadc_wiz_0_0/module5_hw_xadc_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_xadc_wiz_0_0/module5_hw_xadc_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_auto_pc_0/module5_hw_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/module5_hw_ooc.xdc]
 
@@ -115,6 +119,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /thayerfs/home/f00436n/Xilinx/Zybo-Z7-Master.xdc
+set_property used_in_implementation false [get_files /thayerfs/home/f00436n/Xilinx/Zybo-Z7-Master.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

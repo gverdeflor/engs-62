@@ -92,6 +92,15 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_processing_system7_0_0/module5_hw_processing_system7_0_0.xci">
+          <Proxy FileSetName="module5_hw_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_axi_gpio_0_0/module5_hw_axi_gpio_0_0.xci">
+          <Proxy FileSetName="module5_hw_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_xbar_0/module5_hw_xbar_0.xci">
+          <Proxy FileSetName="module5_hw_xbar_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_rst_ps7_0_50M_0/module5_hw_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="module5_hw_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
@@ -101,14 +110,11 @@
         <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_axi_gpio_2_0/module5_hw_axi_gpio_2_0.xci">
           <Proxy FileSetName="module5_hw_axi_gpio_2_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_xbar_0/module5_hw_xbar_0.xci">
-          <Proxy FileSetName="module5_hw_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_xadc_wiz_0_0/module5_hw_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="module5_hw_xadc_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_axi_gpio_0_0/module5_hw_axi_gpio_0_0.xci">
-          <Proxy FileSetName="module5_hw_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_processing_system7_0_0/module5_hw_processing_system7_0_0.xci">
-          <Proxy FileSetName="module5_hw_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="module5_hw.bd" FileRelPathName="ip/module5_hw_axi_timer_0_0/module5_hw_axi_timer_0_0.xci">
+          <Proxy FileSetName="module5_hw_axi_timer_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/module5_hw/hdl/module5_hw_wrapper.v">
@@ -126,6 +132,12 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PPRDIR/../../../Xilinx/Zybo-Z7-Master.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
@@ -194,6 +206,18 @@
     <FileSet Name="module5_hw_axi_gpio_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/module5_hw_axi_gpio_2_0" RelGenDir="$PGENDIR/module5_hw_axi_gpio_2_0">
       <Config>
         <Option Name="TopModule" Val="module5_hw_axi_gpio_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="module5_hw_xadc_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/module5_hw_xadc_wiz_0_0" RelGenDir="$PGENDIR/module5_hw_xadc_wiz_0_0">
+      <Config>
+        <Option Name="TopModule" Val="module5_hw_xadc_wiz_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="module5_hw_axi_timer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/module5_hw_axi_timer_0_0" RelGenDir="$PGENDIR/module5_hw_axi_timer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="module5_hw_axi_timer_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -283,6 +307,30 @@
     <Run Id="module5_hw_axi_gpio_2_0_synth_1" Type="Ft3:Synth" SrcSet="module5_hw_axi_gpio_2_0" Part="xc7z010clg400-1" ConstrsSet="module5_hw_axi_gpio_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/module5_hw_axi_gpio_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module5_hw_axi_gpio_2_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="module5_hw_xadc_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="module5_hw_xadc_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="module5_hw_xadc_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/module5_hw_xadc_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module5_hw_xadc_wiz_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="module5_hw_axi_timer_0_0_synth_1" Type="Ft3:Synth" SrcSet="module5_hw_axi_timer_0_0" Part="xc7z010clg400-1" ConstrsSet="module5_hw_axi_timer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/module5_hw_axi_timer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module5_hw_axi_timer_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -396,6 +444,44 @@
     <Run Id="module5_hw_axi_gpio_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="module5_hw_axi_gpio_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="module5_hw_axi_gpio_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module5_hw_axi_gpio_2_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="module5_hw_xadc_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="module5_hw_xadc_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="module5_hw_xadc_wiz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module5_hw_xadc_wiz_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2021"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="module5_hw_axi_timer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="module5_hw_axi_timer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="module5_hw_axi_timer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module5_hw_axi_timer_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

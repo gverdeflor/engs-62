@@ -143,6 +143,7 @@ OPTRACE "add files" START { }
   add_files /thayerfs/home/f00436n/engs62/module5/module5/module5.srcs/sources_1/bd/module5_hw/module5_hw.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc /thayerfs/home/f00436n/Xilinx/Zybo-Z7-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

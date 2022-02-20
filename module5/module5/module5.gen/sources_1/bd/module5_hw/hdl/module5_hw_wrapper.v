@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-//Date        : Tue Feb  8 15:11:09 2022
+//Date        : Sun Feb 20 16:02:19 2022
 //Host        : m210-linux-26 running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target module5_hw_wrapper.bd
 //Design      : module5_hw_wrapper
@@ -31,8 +31,11 @@ module module5_hw_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    Vaux14_0_v_n,
+    Vaux14_0_v_p,
     btns_4bits_tri_i,
     leds_4bits_tri_o,
+    pwm0_0,
     sws_4bits_tri_i);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -55,8 +58,11 @@ module module5_hw_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input Vaux14_0_v_n;
+  input Vaux14_0_v_p;
   input [3:0]btns_4bits_tri_i;
   output [3:0]leds_4bits_tri_o;
+  output pwm0_0;
   input [3:0]sws_4bits_tri_i;
 
   wire [14:0]DDR_addr;
@@ -80,8 +86,11 @@ module module5_hw_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire Vaux14_0_v_n;
+  wire Vaux14_0_v_p;
   wire [3:0]btns_4bits_tri_i;
   wire [3:0]leds_4bits_tri_o;
+  wire pwm0_0;
   wire [3:0]sws_4bits_tri_i;
 
   module5_hw module5_hw_i
@@ -106,7 +115,10 @@ module module5_hw_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .Vaux14_0_v_n(Vaux14_0_v_n),
+        .Vaux14_0_v_p(Vaux14_0_v_p),
         .btns_4bits_tri_i(btns_4bits_tri_i),
         .leds_4bits_tri_o(leds_4bits_tri_o),
+        .pwm0_0(pwm0_0),
         .sws_4bits_tri_i(sws_4bits_tri_i));
 endmodule

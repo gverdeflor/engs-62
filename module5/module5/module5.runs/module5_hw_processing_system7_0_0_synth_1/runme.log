@@ -9,7 +9,7 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source module5_hw_processing_system7_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2748.434 ; gain = 2.016 ; free physical = 7098 ; free virtual = 25966
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2754.375 ; gain = 2.016 ; free physical = 1964 ; free virtual = 21184
 Command: synth_design -top module5_hw_processing_system7_0_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5659
+INFO: [Synth 8-7075] Helper process launched with PID 23103
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2752.879 ; gain = 0.000 ; free physical = 5430 ; free virtual = 24326
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2758.820 ; gain = 0.000 ; free physical = 159 ; free virtual = 18646
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'module5_hw_processing_system7_0_0' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
@@ -30,20 +30,20 @@ INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (2#1) [/thayerfs/apps/xili
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/thayerfs/apps/xilinx/Vivado/current/scripts/rt/data/unisim_comp.v:89905]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (3#1) [/thayerfs/apps/xilinx/Vivado/current/scripts/rt/data/unisim_comp.v:89905]
 INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:327]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:333]
 INFO: [Synth 8-6155] done synthesizing module 'module5_hw_processing_system7_0_0' (5#1) [/thayerfs/home/f00436n/engs62/module5/module5/module5.gen/sources_1/bd/module5_hw/ip/module5_hw_processing_system7_0_0/synth/module5_hw_processing_system7_0_0.v:60]
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -125,18 +125,18 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.879 ; gain = 0.000 ; free physical = 6354 ; free virtual = 25252
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 2758.820 ; gain = 0.000 ; free physical = 3895 ; free virtual = 18301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.879 ; gain = 0.000 ; free physical = 6409 ; free virtual = 25307
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 2758.820 ; gain = 0.000 ; free physical = 3922 ; free virtual = 18386
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.879 ; gain = 0.000 ; free physical = 6409 ; free virtual = 25307
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 2758.820 ; gain = 0.000 ; free physical = 3922 ; free virtual = 18386
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2752.879 ; gain = 0.000 ; free physical = 6401 ; free virtual = 25299
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2758.820 ; gain = 0.000 ; free physical = 3864 ; free virtual = 18359
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -149,30 +149,30 @@ Parsing XDC File [/thayerfs/home/f00436n/engs62/module5/module5/module5.runs/mod
 Finished Parsing XDC File [/thayerfs/home/f00436n/engs62/module5/module5/module5.runs/module5_hw_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.594 ; gain = 0.000 ; free physical = 6305 ; free virtual = 25213
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2822.535 ; gain = 0.000 ; free physical = 3802 ; free virtual = 18434
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2816.594 ; gain = 0.000 ; free physical = 6305 ; free virtual = 25214
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2822.535 ; gain = 0.000 ; free physical = 3764 ; free virtual = 18406
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.594 ; gain = 63.715 ; free physical = 6379 ; free virtual = 25288
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 2822.535 ; gain = 63.715 ; free physical = 3821 ; free virtual = 18481
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.594 ; gain = 63.715 ; free physical = 6379 ; free virtual = 25288
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 2822.535 ; gain = 63.715 ; free physical = 3823 ; free virtual = 18483
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /thayerfs/home/f00436n/engs62/module5/module5/module5.runs/module5_hw_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2816.594 ; gain = 63.715 ; free physical = 6379 ; free virtual = 25288
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 2822.535 ; gain = 63.715 ; free physical = 3896 ; free virtual = 18556
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.594 ; gain = 63.715 ; free physical = 6378 ; free virtual = 25288
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 2822.535 ; gain = 63.715 ; free physical = 3910 ; free virtual = 18576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -217,25 +217,25 @@ WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5
 WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2816.594 ; gain = 63.715 ; free physical = 6375 ; free virtual = 25289
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 2822.535 ; gain = 63.715 ; free physical = 3882 ; free virtual = 18560
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2840.578 ; gain = 87.699 ; free physical = 6095 ; free virtual = 25016
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 2842.520 ; gain = 83.699 ; free physical = 3353 ; free virtual = 18050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.586 ; gain = 106.707 ; free physical = 6082 ; free virtual = 25003
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 2862.527 ; gain = 103.707 ; free physical = 3340 ; free virtual = 18037
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2875.602 ; gain = 122.723 ; free physical = 6082 ; free virtual = 25003
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3342 ; free virtual = 18040
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -253,37 +253,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -305,26 +305,26 @@ Report Cell Usage:
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.570 ; gain = 125.691 ; free physical = 6082 ; free virtual = 25002
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.543 ; gain = 119.723 ; free physical = 3138 ; free virtual = 17850
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2878.570 ; gain = 61.977 ; free physical = 6138 ; free virtual = 25058
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2878.578 ; gain = 125.691 ; free physical = 6138 ; free virtual = 25059
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 2878.543 ; gain = 56.008 ; free physical = 3196 ; free virtual = 17909
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 2878.551 ; gain = 119.723 ; free physical = 3187 ; free virtual = 17909
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2878.578 ; gain = 0.000 ; free physical = 6227 ; free virtual = 25148
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2878.551 ; gain = 0.000 ; free physical = 3087 ; free virtual = 17902
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.383 ; gain = 0.000 ; free physical = 6159 ; free virtual = 25080
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2897.355 ; gain = 0.000 ; free physical = 3330 ; free virtual = 18203
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: b2ac38fa
+Synth Design complete, checksum: ca9b2b1c
 INFO: [Common 17-83] Releasing license: Synthesis
 24 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 2896.383 ; gain = 147.949 ; free physical = 6498 ; free virtual = 25419
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:01:27 . Memory (MB): peak = 2897.355 ; gain = 142.980 ; free physical = 3604 ; free virtual = 18476
 INFO: [Common 17-1381] The checkpoint '/thayerfs/home/f00436n/engs62/module5/module5/module5.runs/module5_hw_processing_system7_0_0_synth_1/module5_hw_processing_system7_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP module5_hw_processing_system7_0_0, cache-ID = 2ef0cf63250f1053
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP module5_hw_processing_system7_0_0, cache-ID = 07a02c79e803ad25
 INFO: [Common 17-1381] The checkpoint '/thayerfs/home/f00436n/engs62/module5/module5/module5.runs/module5_hw_processing_system7_0_0_synth_1/module5_hw_processing_system7_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file module5_hw_processing_system7_0_0_utilization_synth.rpt -pb module5_hw_processing_system7_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb  8 15:13:12 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 20 16:05:34 2022...
