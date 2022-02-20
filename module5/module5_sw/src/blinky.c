@@ -49,44 +49,39 @@ static XUartPs uart1port; 					/* UART1 port instance */
 static bool done = false;					/* UART interrupt status */
 static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
 
-static int buffcount = 0;
-static int updateval;
-static u8 *charbuff;
-static u8 pingbuff[sizeof(ping_t)];
-static u8 upresbuff[sizeof(update_response_t)];
-static u8 upreqbuff[sizeof(int)];
 
-void send_ping(ping_t ping) {
+static int updateval;
+static int buffcount = 0;					// for receiving
+static u8 *charbuff;						// for sending
+static u8 pingbuff[sizeof(ping_t)];
+static u8 updatebuff[sizeof(update_response_t)];
+
+void send_ping(void) {
+	// Declare and initialize ping message to be sent
+	ping_t ping;
 	ping.type = PING;
 	ping.id = 25;
 	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
 }
 
-void sendValue(void *value) {
+void send_update(void *value) {
+	// Convert string pointer value to integer
 	updateval = atoi((char*) value);
+
+	// Declare and initialize update message to be sent
 	update_request_t update_request;
 	update_request.type = UPDATE;
 	update_request.id = 25;
 	update_request.value = updateval;
-	printf("Update Value: %d\n", updateval);
+
+	//printf("Update Value: %d\n", updateval);
 	wifi_mode = UPDATE;
-	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
-
-}
-
-void send_update(update_request_t update_request) {
-	update_request.type = UPDATE;
-	update_request.id = 25;
-	//update_request.value = 1000;
-	update_request.value = updateval;
-	printf("Update Value: %d\n", updateval);
 	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
 }
 
 void changeToRead(void) {
-	// Change to read mode and set buffer to beginning of update buffer
-	wifi_mode = READ;
-	charbuff = upresbuff;
+	wifi_mode = READ;		// Change to read update mode
+	charbuff = updatebuff;	// Set character buffer to start of update buffer
 }
 
 void mycallback(u32 val) {
@@ -102,41 +97,30 @@ void mycallback(u32 val) {
 	} else if (val == 1) {
 		// Enter PING mode when button 1 pressed
 		wifi_mode = PING;
-		ping_t ping;
-		send_ping(ping);
+		send_ping();
 	} else if (val == 2) {
 		// Enter UPDATE mode when button 2 pressed
 		wifi_mode = UPDATE;
 		changeToRead();
-		update_request_t update;
-		send_update(update);
+		printf("Enter a new value:\n");
 	} else if (val == 3) {
 		// Disconnect UART when button 3 pressed
 		done = true;
 	}
 }
 
-//void update_helper(u8 charbuff) {
-//	upreqbuff[buffcount] = charbuff;
-//	printf("Helper Char Buff: %c\n", upreqbuff[buffcount]);
-//	buffcount++;
-//	if (upreqbuff[buffcount] == (u8)'\r') {
-//		buffcount = 0;
-//		updateval = (int)upreqbuff;
-//	}
-//}
-
 // Forward any characters received by UART0 to UART1
 void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 
 	XUartPs *dev = (XUartPs*)CallBackRef;
-	u8 newLine = (u8)'\n';
+	u8 newline = (u8)'\n';		// newline to signal end of keyboard input
+	u8 nullchar = (u8)'\0';		// null character to mark enf of buffer
 
 	// Check if receive data has been triggered
 	if (Event == XUARTPS_EVENT_RECV_DATA) {
 		XUartPs_Recv(dev, charbuff, 1);
 
-		// Read in keyboard input whhen in CONFIGURE mode
+		// Read in any keyboard input when in CONFIGURE mode
 		if (wifi_mode == CONFIGURE) {
 			XUartPs_Send(&uart0port, charbuff, 1);
 			// Send a newline when carriage return is received
@@ -145,19 +129,17 @@ void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 				XUartPs_Send(dev, charbuff, 1);
 			}
 		}
-		// Call helper function to update value when in UDPDATE mode
+		// Read in numerical keyboard input when in UPDATE mode
 		if (wifi_mode == READ) {
+			XUartPs_Send(dev, charbuff, 1);
 			if (*charbuff == (u8)'\r') {;
-				XUartPs_Send(dev,&newLine, 1);
-				*charbuff= (u8) '\0'; 	// null character to signal end of buffer
-				sendValue(upresbuff);
-			} else{
+				XUartPs_Send(dev, &newline, 1);
+				*charbuff = nullchar;
+				send_update(updatebuff);
+			} else {
 				charbuff++;
 			}
-
 		}
-//			update_helper(charbuff);
-//			printf("Handler Update: %d\n", updateval);
 	}
 }
 
@@ -184,11 +166,11 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 			}
 		} else if (wifi_mode == UPDATE) {
 			// Display decoded update message from server
-			upresbuff[buffcount] = charbuff;
+			updatebuff[buffcount] = charbuff;
 			buffcount++;
 			if (buffcount == sizeof(update_response_t)) {
 				buffcount = 0;
-				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)upresbuff)->id, ((update_response_t*)upresbuff)->average, ((update_response_t*)upresbuff)->values[25]);
+				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
 			}
 		}
 	}
