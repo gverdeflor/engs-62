@@ -59,7 +59,6 @@ static u8 updatebuff[sizeof(update_response_t)];
 
 static float pot_volt;
 static int pot_volt_percent;
-static double pot_pwm;
 
 void send_ping(void) {
 	// Declare and initialize ping message to be sent
@@ -69,11 +68,11 @@ void send_ping(void) {
 	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
 }
 
-void send_update(void* value) {
+void send_update() {
 	// Convert string pointer value to integer
 	//updateval = atoi((char*) value);
 	updateval = pot_volt_percent;
-	printf("Update Value: %d\n", updateval);
+	//printf("Update Value: %d\n", updateval);
 
 	// Declare and initialize update message to be sent
 	update_request_t update_request;
@@ -85,10 +84,10 @@ void send_update(void* value) {
 	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
 }
 
-void changeToRead(void) {
-	wifi_mode = READ;		// Change to read update mode
-	charbuff = updatebuff;	// Set character buffer to start of update buffer
-}
+//void changeToRead(void) {
+//	wifi_mode = READ;		// Change to read update mode
+//	charbuff = updatebuff;	// Set character buffer to start of update buffer
+//}
 
 void mycallback(u32 val) {
 	// Toggle LED 0-3 based on button and switch input
@@ -105,17 +104,18 @@ void mycallback(u32 val) {
 		wifi_mode = PING;
 		send_ping();
 	} else if (val == 2) {
+		// Enter UPDATE mode when button 2 pressed
+		wifi_mode = UPDATE;
+		//changeToRead();
+		//printf("Enter a new value:\n");
+
 		// Read in potentiometer voltage
 		pot_volt = adc_get_pot();
 		pot_volt_percent = (int)(100 * pot_volt);
 //		printf("[Pot Voltage=%3.2f]\n", pot_volt);
 //		printf("[Pot Voltage=%3.2d%%]\n", pot_volt_percent);
-
-		// Enter UPDATE mode when button 2 pressed
-		wifi_mode = UPDATE;
-		changeToRead();
-		//printf("Enter a new value:\n");
-		printf("Set servo position with potentiometer:\n");
+		send_update();
+		printf("Servo position set by potentiometer!\n");
 	} else if (val == 3) {
 		// Disconnect UART when button 3 pressed
 		done = true;
@@ -126,8 +126,8 @@ void mycallback(u32 val) {
 void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 
 	XUartPs *dev = (XUartPs*)CallBackRef;
-	u8 newline = (u8)'\n';		// newline to signal end of keyboard input
-	u8 nullchar = (u8)'\0';		// null character to mark enf of buffer
+//	u8 newline = (u8)'\n';		// newline to signal end of keyboard input
+//	u8 nullchar = (u8)'\0';		// null character to mark enf of buffer
 
 	// Check if receive data has been triggered
 	if (Event == XUARTPS_EVENT_RECV_DATA) {
@@ -142,18 +142,18 @@ void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 				XUartPs_Send(dev, charbuff, 1);
 			}
 		}
-		// Read in numerical keyboard input when in UPDATE mode
-		if (wifi_mode == READ) {
-			XUartPs_Send(dev, charbuff, 1);
-			if (*charbuff == (u8)'\r') {;
-				XUartPs_Send(dev, &newline, 1);
-				*charbuff = nullchar;
-				send_update(updatebuff);
-			} else {
-				charbuff++;
-			}
-		}
-	}
+//		// Read in numerical keyboard input when in READ mode
+//		if (wifi_mode == READ) {
+//			XUartPs_Send(dev, charbuff, 1);
+//			if (*charbuff == (u8)'\r') {;
+//				XUartPs_Send(dev, &newline, 1);
+//				*charbuff = nullchar;
+//				send_update(updatebuff);
+//			} else {
+//				charbuff++;
+//			}
+//		}
+ 	}
 }
 
 // Forward any characters received by UART1 to UART0
