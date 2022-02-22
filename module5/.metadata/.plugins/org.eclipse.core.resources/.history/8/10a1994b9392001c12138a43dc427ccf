@@ -1,0 +1,8 @@
+/*
+ * wifi.h -- The WiFi module interface
+ */
+#pragma once
+
+#include <stdio.h>
+#include "xparameters.h"  	/* constants used by the hardware */
+#include "xil_types.h"		/* types used by xilinx */

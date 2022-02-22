@@ -56,7 +56,8 @@ float adc_get_vccint(void) {
  */
 float adc_get_pot(void) {
 	u16 raw = XAdcPs_GetAdcData(&adcport, XADCPS_CH_AUX_MAX-1);
-	float scale = 2.88;	 // potentiometer max voltage
+	//printf("Pre-Scaled Voltage: %f\n", XAdcPs_RawToVoltage(raw));
+	float scale = 2.91;	 // potentiometer max voltage
 	float pot = XAdcPs_RawToVoltage(raw) / scale;
 	return pot;
 }

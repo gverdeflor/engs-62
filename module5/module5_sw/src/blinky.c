@@ -20,6 +20,8 @@
 #include "led.h"							/* led module interface */
 #include "gic.h"							/* interrupt controller interface */
 #include "io.h"								/* button and switch module interface */
+#include "servo.h"							/* servo module interface */
+#include "adc.h"							/* ADC module interface */
 
 #define CONFIGURE 0
 #define PING 1
@@ -49,12 +51,15 @@ static XUartPs uart1port; 					/* UART1 port instance */
 static bool done = false;					/* UART interrupt status */
 static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
 
-
 static int updateval;
 static int buffcount = 0;					// for receiving
 static u8 *charbuff;						// for sending
 static u8 pingbuff[sizeof(ping_t)];
 static u8 updatebuff[sizeof(update_response_t)];
+
+static float pot_volt;
+static int pot_volt_percent;
+static double pot_pwm;
 
 void send_ping(void) {
 	// Declare and initialize ping message to be sent
@@ -64,9 +69,11 @@ void send_ping(void) {
 	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
 }
 
-void send_update(void *value) {
+void send_update(void* value) {
 	// Convert string pointer value to integer
-	updateval = atoi((char*) value);
+	//updateval = atoi((char*) value);
+	updateval = pot_volt_percent;
+	printf("Update Value: %d\n", updateval);
 
 	// Declare and initialize update message to be sent
 	update_request_t update_request;
@@ -74,7 +81,6 @@ void send_update(void *value) {
 	update_request.id = 25;
 	update_request.value = updateval;
 
-	//printf("Update Value: %d\n", updateval);
 	wifi_mode = UPDATE;
 	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
 }
@@ -99,10 +105,17 @@ void mycallback(u32 val) {
 		wifi_mode = PING;
 		send_ping();
 	} else if (val == 2) {
+		// Read in potentiometer voltage
+		pot_volt = adc_get_pot();
+		pot_volt_percent = (int)(100 * pot_volt);
+//		printf("[Pot Voltage=%3.2f]\n", pot_volt);
+//		printf("[Pot Voltage=%3.2d%%]\n", pot_volt_percent);
+
 		// Enter UPDATE mode when button 2 pressed
 		wifi_mode = UPDATE;
 		changeToRead();
-		printf("Enter a new value:\n");
+		//printf("Enter a new value:\n");
+		printf("Set servo position with potentiometer:\n");
 	} else if (val == 3) {
 		// Disconnect UART when button 3 pressed
 		done = true;
@@ -171,6 +184,11 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 			if (buffcount == sizeof(update_response_t)) {
 				buffcount = 0;
 				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
+
+				// Set servo motor according to pot voltage
+				double pot_volt_to_duty_cycle = (ARC_STOP_DUTY_CYCLE - ARC_START_DUTY_CYCLE) / 100;
+				double duty_cycle = (double)(pot_volt_to_duty_cycle*((update_response_t*)updatebuff)->values[25])+7;
+				servo_set(duty_cycle);
 			}
 		}
 	}
@@ -182,6 +200,8 @@ int main() {
 	init_platform();
 	gic_init();
 	led_init();
+	adc_init();
+	servo_init();
 	io_btn_init(&mycallback);
 	io_sw_init(&mycallback);
 

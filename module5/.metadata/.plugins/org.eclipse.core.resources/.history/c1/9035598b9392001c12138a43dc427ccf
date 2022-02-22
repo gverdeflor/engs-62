@@ -1,0 +1,235 @@
+/*
+ * blinky.c -- working with Serial I/O and GPIO
+ *
+ * Assumes the LED's are connected to AXI_GPIO_0, on channel 1
+ *
+ * Terminal Settings:
+ *  -Baud: 115200
+ *  -Data bits: 8
+ *  -Parity: no
+ *  -Stop bits: 1
+ */
+#include <stdio.h>							/* printf(), fflush(stdout), getchar() */
+#include <stdlib.h>							/* strtol() */
+#include <strings.h>						/* strcmp() */
+#include <xgpio.h>							/* Xilinx GPIO functions */
+#include "xil_types.h"						/* u32, u16 etc */
+#include "platform.h"						/* ZYBOboard interface */
+#include "xparameters.h"					/* constants used by the hardware */
+#include "led.h"							/* led module interface */
+#include "gic.h"							/* interrupt controller interface */
+#include "io.h"								/* button and switch module interface */
+
+#define CONFIGURE 0
+#define PING 1
+#define UPDATE 2
+#define READ 3
+
+typedef struct {
+	int type;			// must be assigned to PING
+	int id;				// must be assigned to class ID
+} ping_t;
+
+typedef struct {
+	int type;			// must be assigned to UPDATE
+	int id;				// must be assigned to class ID
+	int value;			// must be assigned to some value
+} update_request_t;
+
+typedef struct {
+	int type;			// must be assigned to UPDATE
+	int id;				// must be assigned to class ID
+	int average;		// average value from all class WiFi module
+	int values[30];		// array of last update value from WiFi module
+} update_response_t;
+
+static XUartPs uart0port; 					/* UART0 port instance */
+static XUartPs uart1port; 					/* UART1 port instance */
+static bool done = false;					/* UART interrupt status */
+static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
+
+
+static int updateval;
+static int buffcount = 0;					// for receiving
+static u8 *charbuff;						// for sending
+static u8 pingbuff[sizeof(ping_t)];
+static u8 updatebuff[sizeof(update_response_t)];
+
+void send_ping(void) {
+	// Declare and initialize ping message to be sent
+	ping_t ping;
+	ping.type = PING;
+	ping.id = 25;
+	XUartPs_Send(&uart0port, (u8*) &ping, sizeof(ping_t));
+}
+
+void send_update(void *value) {
+	// Convert string pointer value to integer
+	updateval = atoi((char*) value);
+
+	// Declare and initialize update message to be sent
+	update_request_t update_request;
+	update_request.type = UPDATE;
+	update_request.id = 25;
+	update_request.value = updateval;
+
+	//printf("Update Value: %d\n", updateval);
+	wifi_mode = UPDATE;
+	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
+}
+
+void changeToRead(void) {
+	wifi_mode = READ;		// Change to read update mode
+	charbuff = updatebuff;	// Set character buffer to start of update buffer
+}
+
+void mycallback(u32 val) {
+	// Toggle LED 0-3 based on button and switch input
+	led_set(ALL, LED_OFF);
+	led_toggle(val);
+	printf("LED%lu toggled!\n", val);
+
+	if (val == 0) {
+		// Enter CONFIGURE mode when button 0 pressed
+		wifi_mode = CONFIGURE;
+		printf("< allows entry to wifi cmd mode >\n");
+	} else if (val == 1) {
+		// Enter PING mode when button 1 pressed
+		wifi_mode = PING;
+		send_ping();
+	} else if (val == 2) {
+		// Enter UPDATE mode when button 2 pressed
+		wifi_mode = UPDATE;
+		changeToRead();
+		printf("Enter a new value:\n");
+	} else if (val == 3) {
+		// Disconnect UART when button 3 pressed
+		done = true;
+	}
+}
+
+// Forward any characters received by UART0 to UART1
+void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
+
+	XUartPs *dev = (XUartPs*)CallBackRef;
+	u8 newline = (u8)'\n';		// newline to signal end of keyboard input
+	u8 nullchar = (u8)'\0';		// null character to mark enf of buffer
+
+	// Check if receive data has been triggered
+	if (Event == XUARTPS_EVENT_RECV_DATA) {
+		XUartPs_Recv(dev, charbuff, 1);
+
+		// Read in any keyboard input when in CONFIGURE mode
+		if (wifi_mode == CONFIGURE) {
+			XUartPs_Send(&uart0port, charbuff, 1);
+			// Send a newline when carriage return is received
+			if (*charbuff == (u8)'\r') {
+				*charbuff = (u8)'\n';
+				XUartPs_Send(dev, charbuff, 1);
+			}
+		}
+		// Read in numerical keyboard input when in UPDATE mode
+		if (wifi_mode == READ) {
+			XUartPs_Send(dev, charbuff, 1);
+			if (*charbuff == (u8)'\r') {;
+				XUartPs_Send(dev, &newline, 1);
+				*charbuff = nullchar;
+				send_update(updatebuff);
+			} else {
+				charbuff++;
+			}
+		}
+	}
+}
+
+// Forward any characters received by UART1 to UART0
+void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
+
+	XUartPs *dev = (XUartPs*)CallBackRef;
+	u8 charbuff;
+
+	// Check if receive data has been triggered
+	if (Event == XUARTPS_EVENT_RECV_DATA) {
+		XUartPs_Recv(dev, &charbuff, 1);
+
+		if (wifi_mode == CONFIGURE) {
+			// Echo back keyboard input if in configure mode
+			XUartPs_Send(&uart1port, &charbuff, 1);
+		} else if (wifi_mode == PING) {
+			//	Display decoded ping message from server
+			pingbuff[buffcount] = charbuff;
+			buffcount++;
+			if (buffcount == sizeof(ping_t)) {
+				buffcount = 0;
+				printf("[PING,id=%d]\n", ((ping_t*)pingbuff)->id);
+			}
+		} else if (wifi_mode == UPDATE) {
+			// Display decoded update message from server
+			updatebuff[buffcount] = charbuff;
+			buffcount++;
+			if (buffcount == sizeof(update_response_t)) {
+				buffcount = 0;
+				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
+			}
+		}
+	}
+}
+
+int main() {
+
+	/* Initialize hardware platform and I/O	 */
+	init_platform();
+	gic_init();
+	led_init();
+	io_btn_init(&mycallback);
+	io_sw_init(&mycallback);
+
+	/* Initialize UART1 */
+	XUartPs_Config *config1 = XUartPs_LookupConfig(XPAR_PS7_UART_1_DEVICE_ID);
+	XUartPs_CfgInitialize(&uart1port, config1, config1->BaseAddress);
+	XUartPs_SetFifoThreshold(&uart1port,1);
+	XUartPs_SetInterruptMask(&uart1port,XUARTPS_IXR_RXOVR);
+
+	/* Connect UART1 interrupt handler to GIC*/
+	XUartPs_SetHandler(&uart1port, (XUartPs_Handler)uart1_handler, &uart1port);
+	gic_connect(XPAR_XUARTPS_1_INTR, (Xil_InterruptHandler)XUartPs_InterruptHandler, &uart1port);
+
+	/* Initialize UART0 */
+	XUartPs_Config *config0 = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
+	XUartPs_CfgInitialize(&uart0port, config0, config0->BaseAddress);
+	XUartPs_SetBaudRate(&uart0port, 9600); // Wi-Fi module default baud rate
+	XUartPs_SetFifoThreshold(&uart0port,1);
+	XUartPs_SetInterruptMask(&uart0port,XUARTPS_IXR_RXOVR);
+
+	/* Connect UART0 interrupt handler to GIC*/
+	XUartPs_SetHandler(&uart0port, (XUartPs_Handler)uart0_handler, &uart0port);
+	gic_connect(XPAR_XUARTPS_0_INTR, (Xil_InterruptHandler)XUartPs_InterruptHandler, &uart0port);
+
+	 /* 
+		* set stdin unbuffered, forcing getchar to return immediately when
+		* a character is typed.
+		*/
+	setvbuf(stdin,NULL,_IONBF,0);
+	 
+	printf("\n[Hello]\n");
+
+	// Wait for interrupts from UART handler
+	while(!done) {
+	 sleep(1);
+	}
+	printf("[done]\n");
+	sleep(1);
+
+	// Turn off all I/O
+	led_set(ALL, LED_OFF);
+	io_btn_close();
+	io_sw_close();
+	XUartPs_DisableUart(&uart1port);
+	XUartPs_DisableUart(&uart0port);
+	gic_disconnect(XPAR_XUARTPS_0_INTR);
+	gic_disconnect(XPAR_XUARTPS_1_INTR);
+	gic_close();
+
+	cleanup_platform();					/* cleanup the hardware platform */
+	return 0;
+}

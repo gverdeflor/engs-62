@@ -1,0 +1,16 @@
+/*
+ * wifi.c
+ */
+
+#include "wifi.h"				/* WiFi module interface */
+
+static XUartPs uart0port; 					/* UART0 port instance */
+static XUartPs uart1port; 					/* UART1 port instance */
+static bool done = false;					/* UART interrupt status */
+static int wifi_mode = CONFIGURE;			/* WiFi module operation mode */
+
+static int updateval;
+static int buffcount = 0;					// for receiving
+static u8 *charbuff;						// for sending
+static u8 pingbuff[sizeof(ping_t)];
+static u8 updatebuff[sizeof(update_response_t)];

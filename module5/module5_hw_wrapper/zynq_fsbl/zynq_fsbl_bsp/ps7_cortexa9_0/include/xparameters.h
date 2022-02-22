@@ -460,6 +460,88 @@
 
 /******************************************************************/
 
+/* Definitions for driver SYSMON */
+#define XPAR_XSYSMON_NUM_INSTANCES 1U
+
+/* Definitions for peripheral XADC_WIZ_0 */
+#define XPAR_XADC_WIZ_0_IP_TYPE 0U
+#define XPAR_XADC_WIZ_0_DEVICE_ID 0U
+#define XPAR_XADC_WIZ_0_BASEADDR 0x43C00000U
+#define XPAR_XADC_WIZ_0_HIGHADDR 0x43C0FFFFU
+#define XPAR_XADC_WIZ_0_INCLUDE_INTR 1U
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral XADC_WIZ_0 */
+#define XPAR_SYSMON_0_IP_TYPE 0U
+#define XPAR_SYSMON_0_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
+#define XPAR_SYSMON_0_BASEADDR 0x43C00000U
+#define XPAR_SYSMON_0_HIGHADDR 0x43C0FFFFU
+#define XPAR_SYSMON_0_INCLUDE_INTR 1U
+
+
+/******************************************************************/
+
+/* Definitions for driver TMRCTR */
+#define XPAR_XTMRCTR_NUM_INSTANCES 1U
+
+/* Definitions for peripheral AXI_TIMER_0 */
+#define XPAR_AXI_TIMER_0_DEVICE_ID 0U
+#define XPAR_AXI_TIMER_0_BASEADDR 0x42800000U
+#define XPAR_AXI_TIMER_0_HIGHADDR 0x4280FFFFU
+#define XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ 50000000U
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_TIMER_0 */
+#define XPAR_TMRCTR_0_DEVICE_ID 0U
+#define XPAR_TMRCTR_0_BASEADDR 0x42800000U
+#define XPAR_TMRCTR_0_HIGHADDR 0x4280FFFFU
+#define XPAR_TMRCTR_0_CLOCK_FREQ_HZ XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ
+
+/******************************************************************/
+
+/* Definitions for driver TTCPS */
+#define XPAR_XTTCPS_NUM_INSTANCES 3U
+
+/* Definitions for peripheral PS7_TTC_0 */
+#define XPAR_PS7_TTC_0_DEVICE_ID 0U
+#define XPAR_PS7_TTC_0_BASEADDR 0XF8001000U
+#define XPAR_PS7_TTC_0_TTC_CLK_FREQ_HZ 111111115U
+#define XPAR_PS7_TTC_0_TTC_CLK_CLKSRC 0U
+#define XPAR_PS7_TTC_1_DEVICE_ID 1U
+#define XPAR_PS7_TTC_1_BASEADDR 0XF8001004U
+#define XPAR_PS7_TTC_1_TTC_CLK_FREQ_HZ 111111115U
+#define XPAR_PS7_TTC_1_TTC_CLK_CLKSRC 0U
+#define XPAR_PS7_TTC_2_DEVICE_ID 2U
+#define XPAR_PS7_TTC_2_BASEADDR 0XF8001008U
+#define XPAR_PS7_TTC_2_TTC_CLK_FREQ_HZ 111111115U
+#define XPAR_PS7_TTC_2_TTC_CLK_CLKSRC 0U
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral PS7_TTC_0 */
+#define XPAR_XTTCPS_0_DEVICE_ID XPAR_PS7_TTC_0_DEVICE_ID
+#define XPAR_XTTCPS_0_BASEADDR 0xF8001000U
+#define XPAR_XTTCPS_0_TTC_CLK_FREQ_HZ 111111115U
+#define XPAR_XTTCPS_0_TTC_CLK_CLKSRC 0U
+
+#define XPAR_XTTCPS_1_DEVICE_ID XPAR_PS7_TTC_1_DEVICE_ID
+#define XPAR_XTTCPS_1_BASEADDR 0xF8001004U
+#define XPAR_XTTCPS_1_TTC_CLK_FREQ_HZ 111111115U
+#define XPAR_XTTCPS_1_TTC_CLK_CLKSRC 0U
+
+#define XPAR_XTTCPS_2_DEVICE_ID XPAR_PS7_TTC_2_DEVICE_ID
+#define XPAR_XTTCPS_2_BASEADDR 0xF8001008U
+#define XPAR_XTTCPS_2_TTC_CLK_FREQ_HZ 111111115U
+#define XPAR_XTTCPS_2_TTC_CLK_CLKSRC 0U
+
+
+/******************************************************************/
+
 /* Definitions for driver UARTPS */
 #define XPAR_XUARTPS_NUM_INSTANCES 2
 

@@ -24,3 +24,10 @@ platform active {module5_hw_wrapper}
 platform config -updatehw {/thayerfs/home/f00436n/engs62/module5/module5/module5_hw_wrapper.xsa}
 platform clean
 platform generate
+platform clean
+platform generate
+platform clean
+platform active {module5_hw_wrapper}
+platform config -updatehw {/thayerfs/home/f00436n/engs62/module5/module5/module5_hw_wrapper.xsa}
+platform generate
+platform generate -domains standalone_ps7_cortexa9_0 
