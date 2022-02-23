@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Feb 23 13:26:52 2022
+# Process ID: 21590
+# Current directory: /thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1
+# Command line: vivado -log module6_hw_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source module6_hw_wrapper.tcl
+# Log file: /thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/module6_hw_wrapper.vds
+# Journal file: /thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/vivado.jou
+# Running On: m210-linux-26, OS: Linux, CPU Frequency: 1712.278 MHz, CPU Physical cores: 4, Host memory: 16560 MB
+#-----------------------------------------------------------
+source module6_hw_wrapper.tcl -notrace
