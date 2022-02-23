@@ -24,7 +24,7 @@
 #include "io.h"								/* button and switch module interface */
 #include "servo.h"							/* servo module interface */
 #include "adc.h"							/* ADC module interface */
-#include "wifi.h"							/* WiFi module interace */
+//#include "wifi.h"							/* WiFi module interace */
 
 /* Possible States */
 #define CONFIGURE 0

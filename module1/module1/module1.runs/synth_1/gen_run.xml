@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1642022573" LaunchIncrCheckpoint="$PPRDIR/../../module1/module1.srcs/utils_1/imports/synth_1/module1_hw_wrapper.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="module1_hw_wrapper_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1642022573" LaunchIncrCheckpoint="$PPRDIR/../../../workspace/module1/module1.srcs/utils_1/imports/synth_1/module1_hw_wrapper.dcp">
   <File Type="RDS-DCP" Name="module1_hw_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="module1_hw_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="module1_hw_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="module1_hw_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="module1_hw_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="module1_hw_wrapper_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="module1_hw_wrapper_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="module1_hw_wrapper.tcl"/>
+  <File Type="RDS-UTIL" Name="module1_hw_wrapper_utilization_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="module1_hw_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="module1_hw_wrapper.vds"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/module1_hw/module1_hw.bd">
@@ -39,7 +36,7 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PPRDIR/../../module1/module1.srcs/utils_1/imports/synth_1/module1_hw_wrapper.dcp">
+    <File Path="$PPRDIR/../../../workspace/module1/module1.srcs/utils_1/imports/synth_1/module1_hw_wrapper.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -57,7 +54,7 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="module1_hw_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="module1_hw_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="module1_hw_rst_ps7_0_50M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="module1_hw_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="module1_hw_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="module1_hw_rst_ps7_0_50M_0"/>
 </GenRun>

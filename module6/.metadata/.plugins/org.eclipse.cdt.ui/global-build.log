@@ -1,19 +1,82 @@
 Nothing to build in platform 'module6_hw_wrapper'
 
-14:01:20 **** Incremental Build of configuration Debug for project module6_sw ****
+14:27:11 **** Clean-only build of configuration Debug for project module6_sw ****
+make clean 
+rm -rf  ./src/adc.o ./src/blinky.o ./src/gic.o ./src/io.o ./src/led.o ./src/main.o ./src/platform.o ./src/servo.o  ./src/adc.d ./src/blinky.d ./src/gic.d ./src/io.d ./src/led.d ./src/main.d ./src/platform.d ./src/servo.d  module6_sw.elf.size  module6_sw.elf
+ 
+14:27:12 **** Incremental Build of configuration Debug for project module6_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
+Building file: ../src/adc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/adc.d" -MT"src/adc.o" -o "src/adc.o" "../src/adc.c"
+Finished building: ../src/adc.c
+ 
+Building file: ../src/gic.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/gic.d" -MT"src/gic.o" -o "src/gic.o" "../src/gic.c"
+Finished building: ../src/gic.c
+ 
+Building file: ../src/io.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/io.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/io.d" -MT"src/io.o" -o "src/io.o" "../src/io.c"
+Finished building: ../src/io.c
+ 
+Building file: ../src/led.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/led.d" -MT"src/led.o" -o "src/led.o" "../src/led.c"
+Finished building: ../src/led.c
+ 
 Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:22:10: fatal error: led.h: No such file or directory
-   22 | #include "led.h"       /* led module interface */
-      |          ^~~~~~~
-compilation terminated.
+../src/main.c: In function 'change_state':
+../src/main.c:42:11: error: expected expression before '<' token
+   42 |   state = <new_state>;  // change state and generate outputs
+      |           ^
+../src/main.c:44:11: error: expected expression before '<' token
+   44 |   state = <new_state>;
+      |           ^
+../src/main.c:46:11: error: expected expression before '<' token
+   46 |   state = <new_state>;
+      |           ^
+../src/main.c: In function 'main':
+../src/main.c:65:2: warning: implicit declaration of function 'wifi_init'; did you mean 'gic_init'? [-Wimplicit-function-declaration]
+   65 |  wifi_init();
+      |  ^~~~~~~~~
+      |  gic_init
+../src/main.c:66:15: error: 'mycallback' undeclared (first use in this function); did you mean 'btn_callback'?
+   66 |  io_btn_init(&mycallback);
+      |               ^~~~~~~~~~
+      |               btn_callback
+../src/main.c:66:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:74:9: error: 'done' undeclared (first use in this function)
+   74 |  while(!done) {
+      |         ^~~~
+../src/main.c:75:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   75 |   sleep(1);  // Do nothing and wait for interrupts
+      |   ^~~~~
+In file included from ../src/main.c:18:
+../src/main.c:85:23: error: 'uart1port' undeclared (first use in this function)
+   85 |  XUartPs_DisableUart(&uart1port);
+      |                       ^~~~~~~~~
+/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xuartps.h:417:16: note: in definition of macro 'XUartPs_DisableUart'
+  417 |    Xil_Out32(((InstancePtr)->Config.BaseAddress + (u32)XUARTPS_CR_OFFSET), \
+      |                ^~~~~~~~~~~
+../src/main.c:86:23: error: 'uart0port' undeclared (first use in this function)
+   86 |  XUartPs_DisableUart(&uart0port);
+      |                       ^~~~~~~~~
+/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xuartps.h:417:16: note: in definition of macro 'XUartPs_DisableUart'
+  417 |    Xil_Out32(((InstancePtr)->Config.BaseAddress + (u32)XUARTPS_CR_OFFSET), \
+      |                ^~~~~~~~~~~
+At top level:
+../src/main.c:52:13: warning: 'btn_callback' defined but not used [-Wunused-function]
+   52 | static void btn_callback(int btn) {
+      |             ^~~~~~~~~~~~
+src/subdir.mk:39: recipe for target 'src/main.o' failed
 make[1]: *** [src/main.o] Error 1
-src/subdir.mk:24: recipe for target 'src/main.o' failed
-make: *** [all] Error 2
 makefile:33: recipe for target 'all' failed
+make: *** [all] Error 2
