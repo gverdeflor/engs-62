@@ -48,3 +48,11 @@ bool led_get(u32 led);
  */
 void led_toggle(u32 led);
 
+/*
+ * Set color of LED6
+ *
+ * <color> is a character: r,g,b,y
+ * Does nothing if <color> is invalid
+ */
+void led_rgb(char color);
+
