@@ -1,5 +1,0 @@
-/*
- * wifi.c
- */
-
-#include "wifi.h"				/* WiFi module interface */

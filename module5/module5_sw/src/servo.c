@@ -52,7 +52,7 @@ void servo_set(double dutycycle) {
 	XTmrCtr_Start(&tmrport, 0);
 	XTmrCtr_Start(&tmrport, 1);
 
-	printf("Duty Cycle: %0.2f\n", dutycycle);
+//	printf("Duty Cycle: %0.2f\n", dutycycle);
 //	printf("High Time: %f\n", high_time);
 //	printf("High Clock Cycle Count: %d\n", high_count);
 }

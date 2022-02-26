@@ -5,13 +5,16 @@
 		<item key="DIALOG_Y_ORIGIN" value="562"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Read"/>
+		<item key="selection" value="done"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="done"/>
+			<item value="pot_voltage_percent"/>
+			<item value="pot_volt"/>
 			<item value="READ"/>
 			<item value="send_update"/>
 			<item value="update"/>
@@ -23,11 +26,13 @@
 			<item value="handler"/>
 		</list>
 		<list key="replacehistory">
+			<item value="pot_percent"/>
+			<item value="pot_voltage"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="537"/>
-		<item key="DIALOG_Y_ORIGIN" value="287"/>
+		<item key="DIALOG_X_ORIGIN" value="794"/>
+		<item key="DIALOG_Y_ORIGIN" value="266"/>
 		<item key="DIALOG_WIDTH" value="348"/>
 		<item key="DIALOG_HEIGHT" value="440"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
