@@ -9,7 +9,7 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source module6_hw_xbar_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2743.562 ; gain = 2.016 ; free physical = 1055 ; free virtual = 18934
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2746.527 ; gain = 2.016 ; free physical = 5457 ; free virtual = 25523
 Command: synth_design -top module6_hw_xbar_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19995
+INFO: [Synth 8-7075] Helper process launched with PID 7730
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 2748.008 ; gain = 0.000 ; free physical = 172 ; free virtual = 14363
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2750.973 ; gain = 0.000 ; free physical = 3779 ; free virtual = 23889
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'module6_hw_xbar_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xbar_0/synth/module6_hw_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -37,6 +37,8 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' (3#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' (4#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
@@ -79,11 +81,13 @@ WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_26_addr_decoder
 WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[5] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[4] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[3] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[2] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[5] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RID[4] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RID[3] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXI_RID[2] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
@@ -140,43 +144,41 @@ WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_26_axi_c
 WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_bid[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_bid[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_bid[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_buser[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_buser[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_buser[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rid[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rid[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rid[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rlast[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_rlast[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:54 . Memory (MB): peak = 2748.008 ; gain = 0.000 ; free physical = 356 ; free virtual = 14027
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2750.973 ; gain = 0.000 ; free physical = 3733 ; free virtual = 23855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:57 . Memory (MB): peak = 2748.008 ; gain = 0.000 ; free physical = 592 ; free virtual = 14508
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2750.973 ; gain = 0.000 ; free physical = 3728 ; free virtual = 23850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:57 . Memory (MB): peak = 2748.008 ; gain = 0.000 ; free physical = 592 ; free virtual = 14508
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2750.973 ; gain = 0.000 ; free physical = 3728 ; free virtual = 23850
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2748.008 ; gain = 0.000 ; free physical = 562 ; free virtual = 14481
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2750.973 ; gain = 0.000 ; free physical = 3721 ; free virtual = 23842
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -187,30 +189,30 @@ Parsing XDC File [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/mod
 Finished Parsing XDC File [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/module6_hw_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2875.535 ; gain = 0.000 ; free physical = 5531 ; free virtual = 15637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2870.500 ; gain = 0.000 ; free physical = 3629 ; free virtual = 23751
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2875.535 ; gain = 0.000 ; free physical = 5550 ; free virtual = 15700
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2870.500 ; gain = 0.000 ; free physical = 3635 ; free virtual = 23757
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:02:10 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5759 ; free virtual = 16057
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3696 ; free virtual = 23829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:02:10 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5754 ; free virtual = 16053
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3696 ; free virtual = 23829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /thayerfs/home/f00436n/engs62/module6/module6/module6.runs/module6_hw_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:02:10 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5759 ; free virtual = 16063
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3697 ; free virtual = 23831
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:02:11 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5686 ; free virtual = 16024
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3678 ; free virtual = 23812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -219,17 +221,17 @@ Detailed RTL Component Info :
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               36 Bit    Registers := 2     
-	                6 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 14    
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 1     
 	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 50    
+	   2 Input    1 Bit        Muxes := 57    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -248,25 +250,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:02:14 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5451 ; free virtual = 15805
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3593 ; free virtual = 23731
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:02:23 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 4425 ; free virtual = 14838
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3747 ; free virtual = 23885
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:02:25 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 4310 ; free virtual = 14723
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3726 ; free virtual = 23865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:02:25 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 4281 ; free virtual = 14694
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3743 ; free virtual = 23881
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -284,37 +286,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5685 ; free virtual = 16231
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5686 ; free virtual = 16232
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5682 ; free virtual = 16229
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5676 ; free virtual = 16223
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5668 ; free virtual = 16215
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5667 ; free virtual = 16214
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -331,35 +333,35 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     1|
-|2     |LUT2 |    16|
-|3     |LUT3 |    26|
-|4     |LUT4 |    52|
-|5     |LUT5 |   144|
-|6     |LUT6 |    43|
-|7     |FDRE |   134|
+|2     |LUT2 |    13|
+|3     |LUT3 |    12|
+|4     |LUT4 |    59|
+|5     |LUT5 |    44|
+|6     |LUT6 |   128|
+|7     |FDRE |   135|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5666 ; free virtual = 16213
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3748 ; free virtual = 23882
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 77 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:29 . Memory (MB): peak = 2875.535 ; gain = 0.000 ; free physical = 5709 ; free virtual = 16268
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:02:32 . Memory (MB): peak = 2875.535 ; gain = 127.527 ; free physical = 5702 ; free virtual = 16261
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2870.500 ; gain = 0.000 ; free physical = 3803 ; free virtual = 23936
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2870.500 ; gain = 119.527 ; free physical = 3804 ; free virtual = 23937
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2875.535 ; gain = 0.000 ; free physical = 5812 ; free virtual = 16372
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2870.500 ; gain = 0.000 ; free physical = 3891 ; free virtual = 24024
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2875.535 ; gain = 0.000 ; free physical = 5747 ; free virtual = 16320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2870.500 ; gain = 0.000 ; free physical = 3827 ; free virtual = 23961
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: aa8fbd50
+Synth Design complete, checksum: 202233a6
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+54 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:03:55 . Memory (MB): peak = 2875.535 ; gain = 131.973 ; free physical = 5992 ; free virtual = 16568
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 2870.500 ; gain = 123.973 ; free physical = 4030 ; free virtual = 24164
 INFO: [Common 17-1381] The checkpoint '/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/module6_hw_xbar_0_synth_1/module6_hw_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP module6_hw_xbar_0, cache-ID = b470f2a759a9548e
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP module6_hw_xbar_0, cache-ID = a937c3c72308bae7
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 INFO: [Common 17-1381] The checkpoint '/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/module6_hw_xbar_0_synth_1/module6_hw_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file module6_hw_xbar_0_utilization_synth.rpt -pb module6_hw_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 23 13:24:43 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  1 14:49:45 2022...

@@ -21,3 +21,19 @@ domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
 platform generate -domains standalone_ps7_cortexa9_0 
+platform clean
+platform active {module6_hw_wrapper}
+platform config -updatehw {/thayerfs/home/f00436n/engs62/module6/module6/module6_hw_wrapper.xsa}
+platform generate
+platform config -updatehw {/thayerfs/home/f00436n/engs62/module6/module6/module6_hw_wrapper.xsa}
+platform clean
+platform generate
+platform clean
+platform clean
+platform clean
+platform config -updatehw {/thayerfs/home/f00436n/engs62/module6/module6/module6_hw_wrapper.xsa}
+platform generate
+platform active {module6_hw_wrapper}
+platform config -updatehw {/thayerfs/home/f00436n/engs62/module6/module6/module6_hw_wrapper.xsa}
+platform clean
+platform generate

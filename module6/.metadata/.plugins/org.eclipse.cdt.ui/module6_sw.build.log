@@ -1,10 +1,7 @@
-13:54:46 **** Incremental Build of configuration Debug for project module6_sw ****
-make all 
-make --no-print-directory pre-build
-a9-linaro-pre-build-step
+15:03:26 **** Clean-only build of configuration Debug for project module6_sw ****
+make clean 
+rm -rf  ./src/adc.o ./src/blinky.o ./src/gic.o ./src/io.o ./src/led.o ./src/main.o ./src/platform.o ./src/servo.o ./src/ttc.o  ./src/adc.d ./src/blinky.d ./src/gic.d ./src/io.d ./src/led.d ./src/main.d ./src/platform.d ./src/servo.d ./src/ttc.d  module6_sw.elf.size  module6_sw.elf
  
-make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
 
-13:54:47 Build Finished (took 633ms)
+15:03:27 Build Finished (took 506ms)
 

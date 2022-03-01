@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-//Date        : Wed Feb 23 13:17:53 2022
+//Date        : Tue Mar  1 14:47:45 2022
 //Host        : m210-linux-26 running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target module6_hw_wrapper.bd
 //Design      : module6_hw_wrapper
@@ -36,6 +36,7 @@ module module6_hw_wrapper
     btns_4bits_tri_i,
     leds_4bits_tri_o,
     pwm0_0,
+    rgb_led_tri_o,
     sws_4bits_tri_i);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -63,6 +64,7 @@ module module6_hw_wrapper
   input [3:0]btns_4bits_tri_i;
   output [3:0]leds_4bits_tri_o;
   output pwm0_0;
+  output [2:0]rgb_led_tri_o;
   input [3:0]sws_4bits_tri_i;
 
   wire [14:0]DDR_addr;
@@ -91,6 +93,7 @@ module module6_hw_wrapper
   wire [3:0]btns_4bits_tri_i;
   wire [3:0]leds_4bits_tri_o;
   wire pwm0_0;
+  wire [2:0]rgb_led_tri_o;
   wire [3:0]sws_4bits_tri_i;
 
   module6_hw module6_hw_i
@@ -120,5 +123,6 @@ module module6_hw_wrapper
         .btns_4bits_tri_i(btns_4bits_tri_i),
         .leds_4bits_tri_o(leds_4bits_tri_o),
         .pwm0_0(pwm0_0),
+        .rgb_led_tri_o(rgb_led_tri_o),
         .sws_4bits_tri_i(sws_4bits_tri_i));
 endmodule

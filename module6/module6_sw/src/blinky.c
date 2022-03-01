@@ -51,7 +51,6 @@
 //
 //	// Display internal temperature when button 0 pressed
 //	if (val == 0) {
-//		led_rgb('b');
 //		float temp = adc_get_temp();
 //		printf("[Temperature=%4.2f]\n", temp);
 //		fflush(stdout);

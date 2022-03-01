@@ -25,14 +25,14 @@
 #include "ttc.h"							/* TTC module interface */
 #include "servo.h"							/* servo module interface */
 #include "adc.h"							/* ADC module interface */
-//#include "wifi.h"							/* WiFi module interace */
+//#include "wifi.h"							/* WiFi module interface */
 
 /* Possible States */
 #define TRAFFIC 0
 #define PEDESTRIAN 1
 #define TRAIN 2
 #define MAINTENANCE 3
-#define LIGHT 4
+//#define LIGHT 4
 
 /* Status Signals */
 static bool red_light = FALSE;
@@ -59,71 +59,69 @@ static bool done;
 
 /* State Transition Function (Version 1) */
 static void change_state() {
+
+	// Default states
+	green_light = FALSE;
+	yellow_light = FALSE;
+	red_light = FALSE;
+	blue_light = FALSE;
+	gate_closed = FALSE;
+
 	switch(state) {
 	// Based on current state
 	case TRAFFIC:
-		// Look at other inputs to set next state
-		if ((walk_button_1 == TRUE || walk_button_2 == TRUE) && traffic_delay == TRUE) {
-			state = PEDESTRIAN;
-			traffic_stop_light();
-		} else if (train_arriving == TRUE) {
-			state = TRAIN;
-			traffic_stop_light();
-		} else if (maintenance_key == TRUE && wheel_close == TRUE) {
-			state = MAINTENANCE;
-			traffic_stop_light();
-		}
 		// Generate outputs
 		green_light = TRUE;
-		yellow_light = FALSE;
-		red_light = FALSE;
-		blue_light = FALSE;
-		gate_closed = FALSE;
+
+		// Look at other inputs to set next state
+		if ((walk_button_1 || walk_button_2) && traffic_delay) {
+			state = PEDESTRIAN;
+			traffic_stop_light();
+		} else if (train_arriving) {
+			state = TRAIN;
+			traffic_stop_light();
+		} else if (maintenance_key && wheel_close) {
+			state = MAINTENANCE;
+			traffic_stop_light();
+		}
 
 	case PEDESTRIAN:
+		// Generate outputs
+		red_light = TRUE;
+
 		// Look at other inputs to set next state
-		if (pedestrian_delay == TRUE) {
+		if (pedestrian_delay) {
 			state = TRAFFIC;
 			traffic_start_light();
-		} else if (train_arriving == TRUE) {
+		} else if (train_arriving) {
 			state = TRAIN;
-		} else if (maintenance_key == TRUE && wheel_close == TRUE) {
+		} else if (maintenance_key && wheel_close) {
 			state = MAINTENANCE;
 		}
-		// Generate outputs
-		green_light = FALSE;
-		yellow_light = FALSE;
-		red_light = TRUE;
-		blue_light = FALSE;
-		gate_closed = FALSE;
 
 	case TRAIN:
-		// Look at other inputs to set next state
-		if (train_clear == TRUE && train_delay == TRUE) {
-			state = TRAFFIC;
-			traffic_start_light();
-		} else if (maintenance_key == TRUE){
-			state = MAINTENANCE;
-		}
 		// Generate outputs
-		green_light = FALSE;
-		yellow_light = FALSE;
 		red_light = TRUE;
-		blue_light = FALSE;
 		gate_closed = TRUE;
 
+		// Look at other inputs to set next state
+		if (train_clear && train_delay) {
+			state = TRAFFIC;
+			traffic_start_light();
+		} else if (maintenance_key){
+			state = MAINTENANCE;
+		}
+
 	case MAINTENANCE:
+		// Generate outputs
+		blue_light = TRUE;
+		gate_closed = TRUE;
+
 		// Look at other inputs to set next state
 		if (maintenance_key == FALSE && wheel_close == FALSE) {
 			state = TRAFFIC;
 			traffic_start_light();
 		}
-		// Generate outputs
-		green_light = FALSE;
-		yellow_light = FALSE;
-		red_light = TRUE;
-		blue_light = TRUE;
-		gate_closed = TRUE;
 
 	break;
 	}
@@ -176,7 +174,6 @@ int main() {
 	}
 	printf("[done]\n");
 	sleep(1);
-
 
 	// Turn off all I/O and cleanup hardware
 	led_set(ALL, LED_OFF);

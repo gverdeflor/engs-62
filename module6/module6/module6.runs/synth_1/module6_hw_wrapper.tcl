@@ -93,10 +93,10 @@ set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_0_1/module6_hw_axi_gpio_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_0_1/module6_hw_axi_gpio_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_0_1/module6_hw_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xbar_0/module6_hw_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_rst_ps7_0_50M_0/module6_hw_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_rst_ps7_0_50M_0/module6_hw_rst_ps7_0_50M_0.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_rst_ps7_0_50M_0/module6_hw_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xbar_0/module6_hw_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_1_0/module6_hw_axi_gpio_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_1_0/module6_hw_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_1_0/module6_hw_axi_gpio_1_0.xdc]
@@ -108,6 +108,9 @@ set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_auto_pc_0/module6_hw_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0_board.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/module6_hw_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -125,6 +128,8 @@ set_property used_in_implementation false [get_files /thayerfs/home/f00436n/Xili
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /thayerfs/home/f00436n/engs62/module6/module6/module6.srcs/utils_1/imports/synth_1/module6_hw_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
