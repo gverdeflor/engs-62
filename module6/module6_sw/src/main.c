@@ -34,6 +34,9 @@
 #define MAINTENANCE 3
 //#define LIGHT 4
 
+#define TRAFFIC_FREQ 0.33					/* 0.33Hz frequency for traffic light */
+#define MAINTENANCE_FREQ 0.5				/* 0.5Hz frequency for maintenance light */
+
 /* Status Signals */
 static bool red_light = FALSE;
 static bool yellow_light = FALSE;
@@ -42,16 +45,16 @@ static bool blue_light = FALSE;
 static bool gate_closed = FALSE;
 
 /* Control Signals */
-static bool walk_button_1;
-static bool walk_button_2;
-static bool light_delay;
-static bool traffic_delay;
-static bool pedestrian_delay;
-static bool train_delay;
-static bool train_arriving;
-static bool train_clear;
-static bool maintenance_key;
-static bool wheel_close;
+static bool walk_button_1 = FALSE;
+static bool walk_button_2 = FALSE;
+static bool light_delay = FALSE;
+static bool traffic_delay = FALSE;
+static bool pedestrian_delay = FALSE;
+static bool train_delay = FALSE;
+static bool train_arriving = FALSE;
+static bool train_clear = FALSE;
+static bool maintenance_key = FALSE;
+static bool wheel_close = FALSE;
 
 /* Current State of Controller */
 static int state;
@@ -129,19 +132,63 @@ static void change_state() {
 
 /* Handles timing when changing from green to red light */
 void traffic_stop_light(void) {
-	red_light == TRUE;
+	yellow_light == TRUE;
+	led_rgb('y');
+	sleep(3);
+
+	yellow_light == FALSE;
+	red_light = TRUE;
+	led_rgb('r');
 }
 
 /* Handles timing when changing from green to red light */
 void traffic_start_light(void) {
-	green_light == TRUE;
+	yellow_light == TRUE;
+	led_rgb('y');
+	sleep(3);
+
+	yellow_light == FALSE;
+	red_light = TRUE;
+	led_rgb('g');
 }
 
 
-/* Example Callback Function */
+/* Button Callback Function */
 static void btn_callback(u32 btn) {
 	// Change state when an interrupt occurs
-	change_state();
+	if (val == 0) {
+		// Pedestrian Signal 1
+		walk_button_1 = TRUE;
+		change_state();
+	} else if (val == 1) {
+		// Pedestrian Signal 2
+		walk_button_2 = TRUE;
+		change_state();
+	}
+}
+
+/* Switch Callback Function */
+static void sw_callback(u32 btn) {
+	// Change state when an interrupt occurs
+	if (val == 0) {
+		// Maintenance Mode
+		maintenance_key = TRUE;
+		wheel_close = TRUE;
+		change_state();
+	} else if (val == 1) {
+		// Maintenance Clear
+		maintenance_key = FALSE;
+		wheel_close = FALSE;
+		change_state();
+	} else if (val == 2) {
+		// Train Arrival
+		train_arriving = TRUE;
+		change_state();
+	} else if (val == 3) {
+		// Train Clear
+		train_clear = TRUE;
+		change_state();
+	}
 }
 
 void ttc_callback(void) {
@@ -156,7 +203,7 @@ int main() {
 	gic_init();
 	led_init();
 	io_btn_init(&btn_callback);
-	io_sw_init(&btn_callback);
+	io_sw_init(&sw_callback);
 	ttc_init(FREQ, &ttc_callback);
 	ttc_start();
 	adc_init();
