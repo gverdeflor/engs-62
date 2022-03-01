@@ -11,7 +11,7 @@
 #include "xparameters.h"  	/* constants used by the hardware */
 #include "xil_types.h"		/* types used by xilinx */
 
-#define FREQ 1				/* 1Hz frequency for LED4 */
+//#define FREQ 1				/* 1Hz frequency for LED4 */
 
 /*
  * ttc_init -- initialize the ttc freqency and callback

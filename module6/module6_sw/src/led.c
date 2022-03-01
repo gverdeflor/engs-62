@@ -131,27 +131,27 @@ void led_rgb(char color) {
 	case 'r' :
 		// Drive the internal red LED
 		XGpio_DiscreteWrite(&port_6, CHANNEL1, 0x4);
-		printf("\nLED6 here... I'm red!");
+
 		break;
 	case 'g' :
 		// Drive the internal green LED
 		XGpio_DiscreteWrite(&port_6, CHANNEL1, 0x2);
-		printf("\nLED6 here... I'm green!");
+
 		break;
 	case 'b' :
 		// Drive the internal blue LED
 		XGpio_DiscreteWrite(&port_6, CHANNEL1, 0x1);
-		printf("\nLED6 here... I'm blue!");
+
 		break;
 	case 'y' :
 		// Drive the internal red and green LEDs
 		XGpio_DiscreteWrite(&port_6, CHANNEL1, 0x6);
-		printf("\nLED6 here... I'm yellow!");
+
 		break;
 	case 'o' :
 		// Drive the internal red and green LEDs
 		XGpio_DiscreteWrite(&port_6, CHANNEL1, 0x0);
-		printf("\nLED6 signing off!\n");
+
 		break;
 	default:
 		printf("\nInvalid color!");
