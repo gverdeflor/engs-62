@@ -4,7 +4,6 @@
  * NOTE: The TTC hardware must be enabled (Timer 0 on the processing system) before it can be used!!
  *
  */
-
 #include "xttcps.h"
 #include "gic.h"			/* interrupt controller interface */
 

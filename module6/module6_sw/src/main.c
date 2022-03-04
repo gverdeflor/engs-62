@@ -40,6 +40,9 @@
 #define TRAFFIC_FREQ 0.33					/* 0.33Hz frequency for traffic light */
 #define MAINTENANCE_FREQ 0.5				/* 0.5Hz frequency for maintenance light */
 
+#define TRAFFIC_FREQ 0.33					/* 0.33Hz frequency for traffic light */
+#define MAINTENANCE_FREQ 0.5				/* 0.5Hz frequency for maintenance light */
+
 /* Status Signals */
 static bool red_light = FALSE;
 static bool yellow_light = FALSE;
@@ -139,7 +142,6 @@ static void change_state() {
 	}
 }
 
-
 /* Button Callback Function */
 static void btn_callback(u32 val) {
 	printf("entered button callback!\n");
@@ -167,6 +169,7 @@ static void sw_callback(u32 val) {
 	} else if (val == 1) {
 		// Train Arrival/Clear
 		train_arriving = !train_arriving;
+
 		change_state();
 	}
 }
