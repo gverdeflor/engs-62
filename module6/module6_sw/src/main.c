@@ -83,6 +83,9 @@ static void change_state() {
 	case TRAFFIC:
 		// Generate outputs
 		green_light = TRUE;
+		printf("[GATE: Open]\n");
+		printf("[MAINTENANCE: No]\n");
+		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
 		if ((walk_button_1 || walk_button_2)) {
@@ -98,6 +101,10 @@ static void change_state() {
 	case PEDESTRIAN:
 		// Generate outputs
 		red_light = TRUE;
+		led_set(ALL, LED_ON);
+		printf("[GATE: Open]\n");
+		printf("[MAINTENANCE: No]\n");
+		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
 		if (pedestrian_delay) {
@@ -114,22 +121,28 @@ static void change_state() {
 		// Generate outputs
 		red_light = TRUE;
 		gate_closed = TRUE;
-		print("im a train beyotch");
+
+		printf("[GATE: Closed]\n");
+		printf("[MAINTENANCE: No]\n");
+		printf("[TRAIN: Arriving]\n");
+
 		// Look at other inputs to set next state
 		if ((train_arriving == FALSE) && train_delay) {
 			printf("should not be called 1\n");
 			state = TRAFFIC;
 		} else if (maintenance_key) {
-			printf("main key high when in train");
 			state = MAINTENANCE;
 		}
 		prev_state = TRAIN;
-
 
 	case MAINTENANCE:
 		// Generate outputs
 		blue_light = TRUE;
 		gate_closed = TRUE;
+
+		printf("[GATE: Closed]\n");
+		printf("[MAINTENANCE: Yes]\n");
+		printf("[TRAIN: No]\n");
 
 		// Look at other inputs to set next state
 		if (maintenance_key == FALSE) {
@@ -169,7 +182,6 @@ static void sw_callback(u32 val) {
 	} else if (val == 1) {
 		// Train Arrival/Clear
 		train_arriving = !train_arriving;
-
 		change_state();
 	}
 }

@@ -1,4 +1,4 @@
-15:49:25 **** Incremental Build of configuration Debug for project module6_sw ****
+16:10:18 **** Incremental Build of configuration Debug for project module6_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,14 +8,19 @@ Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:241:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-  241 |   sleep(1);  // Do nothing and wait for interrupts
+../src/main.c:256:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  256 |   sleep(1);  // Do nothing and wait for interrupts
       |   ^~~~~
 At top level:
-../src/main.c:53:13: warning: 'traffic_delay' defined but not used [-Wunused-variable]
-   53 | static bool traffic_delay = FALSE;
+../src/main.c:56:13: warning: 'traffic_delay' defined but not used [-Wunused-variable]
+   56 | static bool traffic_delay = FALSE;
       |             ^~~~~~~~~~~~~
 Finished building: ../src/main.c
+ 
+Building file: ../src/servo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/servo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/servo.d" -MT"src/servo.o" -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
  
 Building target: module6_sw.elf
 Invoking: ARM v7 gcc linker
@@ -25,9 +30,9 @@ Finished building target: module6_sw.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size module6_sw.elf  |tee "module6_sw.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  79827	   3460	  22928	 106215	  19ee7	module6_sw.elf
+  79947	   3460	  22928	 106335	  19f5f	module6_sw.elf
 Finished building: module6_sw.elf.size
  
 
-15:49:27 Build Finished (took 1s.782ms)
+16:10:20 Build Finished (took 2s.133ms)
 
