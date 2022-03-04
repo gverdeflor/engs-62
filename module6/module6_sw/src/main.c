@@ -83,6 +83,8 @@ static void change_state() {
 	case TRAFFIC:
 		// Generate outputs
 		green_light = TRUE;
+		servo_set(GATE_OPEN);
+
 		printf("[GATE: Open]\n");
 		printf("[MAINTENANCE: No]\n");
 		printf("[TRAIN: Clear]\n");
@@ -102,6 +104,8 @@ static void change_state() {
 		// Generate outputs
 		red_light = TRUE;
 		led_set(ALL, LED_ON);
+		servo_set(GATE_OPEN);
+
 		printf("[GATE: Open]\n");
 		printf("[MAINTENANCE: No]\n");
 		printf("[TRAIN: Clear]\n");
@@ -121,6 +125,7 @@ static void change_state() {
 		// Generate outputs
 		red_light = TRUE;
 		gate_closed = TRUE;
+		servo_set(GATE_CLOSED);
 
 		printf("[GATE: Closed]\n");
 		printf("[MAINTENANCE: No]\n");
@@ -139,6 +144,7 @@ static void change_state() {
 		// Generate outputs
 		blue_light = TRUE;
 		gate_closed = TRUE;
+		servo_set(GATE_CLOSED);
 
 		printf("[GATE: Closed]\n");
 		printf("[MAINTENANCE: Yes]\n");
@@ -197,7 +203,6 @@ void ttc_callback(void) {
 
 	if (state == TRAFFIC) {
 		printf("TRAFFIC\n");
-		servo_set(GATE_OPEN);
 //		if ( (prev_state == PEDESTRIAN) || (prev_state == TRAIN) ) {
 //			if ((ttc_count % 60) <= 30) {
 //				led_rgb('y');
@@ -211,25 +216,39 @@ void ttc_callback(void) {
 
 	} else if (state == PEDESTRIAN) {
 		printf("PEDESTRIAN\n");
-		servo_set(GATE_OPEN);
 		led_rgb('r');
-
 
 	} else if (state == TRAIN) {
 		printf("TRAIN\n");
-		servo_set(GATE_CLOSED);
 		led_rgb('r');
 
 	} else if (state == MAINTENANCE) {
 		printf("MAINTENANCE\n");
-		servo_set(GATE_CLOSED);
+		turn_gate_wheel();
 		// Blue maintenance light
 		if ((ttc_count % 20) <= 10) {
 			led_rgb('b');
 		} else {
 			led_rgb('o');
 		}
+
+
 	}
+}
+
+
+void turn_gate_wheel(void) {
+	float pot_volt = adc_get_pot();
+	double gate_wheel = (pot_volt * 4.75) + 7;
+
+	// Caps PWM duty cycle to mechanical limits
+	if (gate_wheel > ARC_STOP_DUTY_CYCLE) {
+		gate_wheel = ARC_STOP_DUTY_CYCLE;
+	} else if (gate_wheel < ARC_START_DUTY_CYCLE) {
+		gate_wheel = ARC_START_DUTY_CYCLE;
+	}
+
+	servo_set(gate_wheel);
 }
 
 int main() {
