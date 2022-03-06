@@ -14,11 +14,11 @@ static const u32 AXI_TMR_OPTIONS = 0x0 | XTC_PWM_ENABLE_OPTION | XTC_EXT_COMPARE
  * Initialize the servo, setting the duty cycle to 9.5%
  */
 void servo_init(void) {
-	// Initialize servo motor to midpoint of 90 degree arc
+	// Initialize servo motor to lowest point of 90 degree arc
 	XTmrCtr_Initialize(&tmrport, XPAR_TMRCTR_0_DEVICE_ID);
 	XTmrCtr_SetOptions(&tmrport, 0, AXI_TMR_OPTIONS);
 	XTmrCtr_SetOptions(&tmrport, 1, AXI_TMR_OPTIONS);
-	servo_set(ARC_MID_DUTY_CYCLE);
+	servo_set(ARC_STOP_DUTY_CYCLE);
 
 //	XTmrCtr_SetResetValue(&tmrport, 0, CLK_COUNT); 	// 50MHz clock, period = 20ms
 //	XTmrCtr_SetResetValue(&tmrport, 1, 75000);		// Thigh = 1.5ms for 7.5% duty cycle
