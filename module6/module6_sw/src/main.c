@@ -37,28 +37,13 @@
 #define GATE_OPEN ARC_STOP_DUTY_CYCLE
 
 #define FREQ 10								/* 10Hz project spec */
-#define TRAFFIC_FREQ 0.33					/* 0.33Hz frequency for traffic light */
-#define MAINTENANCE_FREQ 0.5				/* 0.5Hz frequency for maintenance light */
-
-#define TRAFFIC_FREQ 0.33					/* 0.33Hz frequency for traffic light */
-#define MAINTENANCE_FREQ 0.5				/* 0.5Hz frequency for maintenance light */
 
 /* Status Signals */
-static bool red_light = FALSE;
-static bool yellow_light = FALSE;
-static bool green_light = TRUE;
-static bool blue_light = FALSE;
 static bool gate_closed = FALSE;
 
 /* Control Signals */
-static bool walk_button_1 = FALSE;
-static bool walk_button_2 = FALSE;
-static bool traffic_delay = FALSE;
-static bool pedestrian_delay = FALSE;
-static bool train_delay = FALSE;
 static bool train_arriving = FALSE;
 static bool maintenance_key = FALSE;
-//static bool wheel_close = FALSE;
 
 /* Controller State */
 static int state;
@@ -72,17 +57,13 @@ static int ttc_count;
 static void change_state() {
 
 	// Default states
-	green_light = FALSE;
-	yellow_light = FALSE;
-	red_light = FALSE;
-	blue_light = FALSE;
 	gate_closed = FALSE;
 
 	switch(state) {
 	// Based on current state
 	case TRAFFIC:
 		// Generate outputs
-		green_light = TRUE;
+		led_set(ALL, LED_OFF);
 		servo_set(GATE_OPEN);
 
 		printf("[GATE: Open]\n");
@@ -90,19 +71,16 @@ static void change_state() {
 		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
-		if ((walk_button_1 || walk_button_2)) {
-			state = PEDESTRIAN;
-			printf("changed to ped\n");
-		} else if (train_arriving) {
+		if (train_arriving) {
 			state = TRAIN;
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 		}
 		prev_state = TRAFFIC;
+		break;
 
 	case PEDESTRIAN:
 		// Generate outputs
-		red_light = TRUE;
 		led_set(ALL, LED_ON);
 		servo_set(GATE_OPEN);
 
@@ -111,20 +89,22 @@ static void change_state() {
 		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
-		if (pedestrian_delay) {
-			printf("should not be called 3\n");
-			state = TRAFFIC;
-		} else if (train_arriving) {
+//		if (pedestrian_delay) {
+//			printf("Should not be called (PEDESTRIAN)\n");
+//			state = TRAFFIC;
+//		} else
+			if (train_arriving) {
 			state = TRAIN;
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 		}
 		prev_state = PEDESTRIAN;
+		break;
 
 	case TRAIN:
 		// Generate outputs
-		red_light = TRUE;
 		gate_closed = TRUE;
+		led_set(ALL, LED_OFF);
 		servo_set(GATE_CLOSED);
 
 		printf("[GATE: Closed]\n");
@@ -132,49 +112,48 @@ static void change_state() {
 		printf("[TRAIN: Arriving]\n");
 
 		// Look at other inputs to set next state
-		if ((train_arriving == FALSE) && train_delay) {
-			printf("should not be called 1\n");
+		if (train_arriving == FALSE) {
+			printf("Should not be called (TRAIN)\n");
 			state = TRAFFIC;
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 		}
 		prev_state = TRAIN;
+		break;
 
 	case MAINTENANCE:
 		// Generate outputs
-		blue_light = TRUE;
 		gate_closed = TRUE;
+		led_set(ALL, LED_OFF);
 		servo_set(GATE_CLOSED);
 
 		printf("[GATE: Closed]\n");
 		printf("[MAINTENANCE: Yes]\n");
-		printf("[TRAIN: No]\n");
+		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
 		if (maintenance_key == FALSE) {
 			state = TRAFFIC;
-			printf("should not be called 2\n");
+			printf("Should not be called (MAINTENANCE)\n");
 		}
 		prev_state = MAINTENANCE;
+		break;
 
-	break;
 	}
 }
 
 /* Button Callback Function */
 static void btn_callback(u32 val) {
-	printf("entered button callback!\n");
+	printf("Entered button callback!\n");
 	// Change state when an interrupt occurs
 	if (val == 0) {
 		// Pedestrian Signal 1
-		walk_button_1 = TRUE;
+		state = PEDESTRIAN;
 		change_state();
-		walk_button_1 = FALSE;
 	} else if (val == 1) {
 		// Pedestrian Signal 2
-		walk_button_2 = TRUE;
+		state = PEDESTRIAN;
 		change_state();
-		walk_button_2 = FALSE;
 	}
 }
 
@@ -192,52 +171,7 @@ static void sw_callback(u32 val) {
 	}
 }
 
-void ttc_callback(void) {
-
-	// Reset TTC counter if state changes
-	if (prev_state != state) {
-		ttc_count = 0;
-	} else {
-		ttc_count++;
-	}
-
-	if (state == TRAFFIC) {
-		printf("TRAFFIC\n");
-//		if ( (prev_state == PEDESTRIAN) || (prev_state == TRAIN) ) {
-//			if ((ttc_count % 60) <= 30) {
-//				led_rgb('y');
-//			}
-//		} else {
-//			if ((ttc_count % 60) > 30) {
-//				led_rgb('g');
-//			}
-//		}
-		led_rgb('g');
-
-	} else if (state == PEDESTRIAN) {
-		printf("PEDESTRIAN\n");
-		led_rgb('r');
-
-	} else if (state == TRAIN) {
-		printf("TRAIN\n");
-		led_rgb('r');
-
-	} else if (state == MAINTENANCE) {
-		printf("MAINTENANCE\n");
-		turn_gate_wheel();
-		// Blue maintenance light
-		if ((ttc_count % 20) <= 10) {
-			led_rgb('b');
-		} else {
-			led_rgb('o');
-		}
-
-
-	}
-}
-
-
-void turn_gate_wheel(void) {
+void turn_gate(void) {
 	float pot_volt = adc_get_pot();
 	double gate_wheel = (pot_volt * 4.75) + 7;
 
@@ -250,6 +184,62 @@ void turn_gate_wheel(void) {
 
 	servo_set(gate_wheel);
 }
+
+void ttc_callback(void) {
+
+//	printf("Previous State: %d \n", prev_state);
+//	printf("Current State: %d \n", state);
+
+	// Reset TTC counter if state changes
+	if (prev_state != state) {
+		ttc_count = 0;
+	} else {
+		ttc_count++;
+	}
+
+	// Traffic flowing
+	if (state == TRAFFIC) {
+		printf("TRAFFIC\n");
+		led_rgb('g');
+
+	// Pedestrians walking
+	} else if (state == PEDESTRIAN) {
+		printf("PEDESTRIAN\n");
+		printf("TTC Count: %d \n", ttc_count);
+		// Traffic stopping --> YELLOW
+		if ((ttc_count % 190) <= 30) {
+			led_rgb('y');
+  		// Traffic stopped --> RED
+		} else if (((ttc_count % 190) <= 130)) {
+			led_rgb('r');
+		// Traffic starting --> YELLOW
+		} else if (((ttc_count % 190) <= 160)) {
+			led_rgb('y');
+		// Traffic starting --> GREEN
+		} else {
+			led_rgb('g');
+			state = TRAFFIC;
+		}
+
+	// Train arriving
+	} else if (state == TRAIN) {
+		printf("TRAIN\n");
+		led_rgb('r');
+
+	// Engineer maintaining
+	} else if (state == MAINTENANCE) {
+		printf("MAINTENANCE\n");
+		turn_gate();
+		// Blue maintenance light
+		if ((ttc_count % 20) <= 10) {
+			led_rgb('b');
+		} else {
+			led_rgb('o');
+		}
+
+	}
+}
+
 
 int main() {
 
