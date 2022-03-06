@@ -167,6 +167,10 @@ static void sw_callback(u32 val) {
 	} else if (val == 1) {
 		// Train Arrival/Clear
 		train_arriving = !train_arriving;
+
+		if (train_arriving) {
+			state = TRAIN;
+		}
 		change_state();
 	}
 }
@@ -187,8 +191,8 @@ void turn_gate(void) {
 
 void ttc_callback(void) {
 
-//	printf("Previous State: %d \n", prev_state);
-//	printf("Current State: %d \n", state);
+	printf("Previous State: %d \n", prev_state);
+	printf("Current State: %d \n", state);
 
 	// Reset TTC counter if state changes
 	if (prev_state != state) {
@@ -200,7 +204,14 @@ void ttc_callback(void) {
 	// Traffic flowing
 	if (state == TRAFFIC) {
 		printf("TRAFFIC\n");
-		led_rgb('g');
+		printf("TTC Count: %d \n", ttc_count);
+		// Traffic starting --> YELLOW
+		if ((ttc_count) <= 30) {
+			led_rgb('y');
+		// Traffic stopped --> GREEN
+		} else {
+			led_rgb('g');
+		}
 
 	// Pedestrians walking
 	} else if (state == PEDESTRIAN) {
@@ -225,6 +236,15 @@ void ttc_callback(void) {
 	} else if (state == TRAIN) {
 		printf("TRAIN\n");
 		led_rgb('r');
+
+		printf("TTC Count: %d \n", ttc_count);
+		// Traffic stopping --> YELLOW
+		if ((ttc_count) <= 30) {
+			led_rgb('y');
+		// Traffic stopped --> RED
+		} else {
+			led_rgb('r');
+		}
 
 	// Engineer maintaining
 	} else if (state == MAINTENANCE) {

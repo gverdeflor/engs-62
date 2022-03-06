@@ -1,6 +1,6 @@
 Nothing to build in platform 'module6_hw_wrapper'
 
-13:38:32 **** Incremental Build of configuration Debug for project module6_sw ****
+13:53:30 **** Incremental Build of configuration Debug for project module6_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -10,8 +10,8 @@ Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:265:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-  265 |   sleep(1);  // Do nothing and wait for interrupts
+../src/main.c:285:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  285 |   sleep(1);  // Do nothing and wait for interrupts
       |   ^~~~~
 Finished building: ../src/main.c
  
@@ -23,6 +23,6 @@ Finished building target: module6_sw.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size module6_sw.elf  |tee "module6_sw.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  80139	   3452	  22928	 106519	  1a017	module6_sw.elf
+  80371	   3452	  22928	 106751	  1a0ff	module6_sw.elf
 Finished building: module6_sw.elf.size
  
