@@ -1,9 +1,28 @@
 Nothing to build in platform 'module6_hw_wrapper'
 
-18:22:34 **** Incremental Build of configuration Debug for project module6_sw ****
+18:36:54 **** Incremental Build of configuration Debug for project module6_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:285:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  285 |   sleep(1);  // Do nothing and wait for interrupts
+      |   ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: module6_sw.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/thayerfs/home/f00436n/engs62/module6/module6_hw_wrapper/export/module6_hw_wrapper/sw/module6_hw_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "module6_sw.elf"  ./src/adc.o ./src/blinky.o ./src/gic.o ./src/io.o ./src/led.o ./src/main.o ./src/platform.o ./src/servo.o ./src/ttc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: module6_sw.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size module6_sw.elf  |tee "module6_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80147	   3452	  22912	 106511	  1a00f	module6_sw.elf
+Finished building: module6_sw.elf.size
+ 

@@ -33,10 +33,14 @@
 #define TRAIN 2
 #define MAINTENANCE 3
 
+/* Maintenance Gate Positions */
 #define GATE_CLOSED ARC_START_DUTY_CYCLE
 #define GATE_OPEN ARC_STOP_DUTY_CYCLE
 
+/* Timer Counter */
 #define FREQ 10								/* 10Hz project spec */
+static int ttc_count;
+static bool ttc_reset;
 
 /* Control Signals */
 static bool train_arriving = FALSE;
@@ -47,10 +51,6 @@ static bool ped_inbound = FALSE;
 static int state;
 static bool done;
 
-/* Timer Counter */
-static int ttc_count;
-static bool ttc_reset;
-
 /* State Transition Function */
 static void change_state() {
 
@@ -58,98 +58,88 @@ static void change_state() {
 
 	case TRAFFIC:
 
-//		printf("[STATE: Traffic]\n");
-//		printf("[GATE: Open]\n");
-//		printf("[MAINTENANCE: No]\n");
-//		printf("[TRAIN: Clear]\n");
+		printf("[STATE: Traffic]\n");
+		printf("[GATE: Open]\n");
+		printf("[MAINTENANCE: No]\n");
+		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-//			led_set(ALL, LED_OFF);
-			printf("TRAFFIC --> TRAIN\n");
+//			printf("TRAFFIC --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-//			led_set(ALL, LED_OFF);
-			printf("TRAFFIC --> MAINTENANCE\n");
+//			printf("TRAFFIC --> MAINTENANCE\n");
 		} else if (ped_inbound) {
 			state = PEDESTRIAN;
 			servo_set(GATE_OPEN);
-//			led_set(ALL, LED_ON);
-			printf("TRAFFIC --> PEDO\n");
+//			printf("TRAFFIC --> PEDO\n");
 		}
 		ttc_reset = true;
 		break;
 
 	case PEDESTRIAN:
-//
-//		printf("[STATE: Pedestrian]\n");
-//		printf("[GATE: Open]\n");
-//		printf("[MAINTENANCE: No]\n");
-//		printf("[TRAIN: Clear]\n");
+
+		printf("[STATE: Pedestrian]\n");
+		printf("[GATE: Open]\n");
+		printf("[MAINTENANCE: No]\n");
+		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-//			led_set(ALL, LED_OFF);
-			printf("PEDO --> TRAIN\n");
+//			printf("PEDO --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-//			led_set(ALL, LED_OFF);
-			printf("PEDO --> MAINTENANCE\n");
+//			printf("PEDO --> MAINTENANCE\n");
 		} else if (!ped_inbound) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-//			led_set(ALL, LED_OFF);
-			printf("PEDO --> TRAFFIC\n");
+//			printf("PEDO --> TRAFFIC\n");
 		}
 		ttc_reset = true;
 		break;
 
 	case TRAIN:
 
-//		printf("[STATE: Train]\n");
-//		printf("[GATE: Closed]\n");
-//		printf("[MAINTENANCE: No]\n");
-//		printf("[TRAIN: Arriving]\n");
+		printf("[STATE: Train]\n");
+		printf("[GATE: Closed]\n");
+		printf("[MAINTENANCE: No]\n");
+		printf("[TRAIN: Arriving]\n");
 
 		// Look at other inputs to set next state
 		if (train_arriving == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-//			led_set(ALL, LED_OFF);
-			printf("TRAIN --> TRAFFIC\n");
+//			printf("TRAIN --> TRAFFIC\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-//			led_set(ALL, LED_OFF);
-			printf("TRAIN --> MAINTENANCE\n");
+//			printf("TRAIN --> MAINTENANCE\n");
 		}
 		ttc_reset = true;
 		break;
 
 	case MAINTENANCE:
 
-//		printf("[STATE: Maintenance]\n");
-//		printf("[GATE: Closed]\n");
-//		printf("[MAINTENANCE: Yes]\n");
-//		printf("[TRAIN: Clear]\n");
+		printf("[STATE: Maintenance]\n");
+		printf("[GATE: Closed]\n");
+		printf("[MAINTENANCE: Yes]\n");
+		printf("[TRAIN: Clear]\n");
 
 		// Look at other inputs to set next state
 		if (maintenance_key == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-//			led_set(ALL, LED_OFF);
-			printf("MAINTENANCE --> TRAFFIC\n");
+//			printf("MAINTENANCE --> TRAFFIC\n")''
 		} else if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-//			led_set(ALL, LED_OFF);
-			printf("MAINTENANCE --> TRAIN\n");
+//			printf("MAINTENANCE --> TRAIN\n");
 		}
 		ttc_reset = true;
 		break;
@@ -232,13 +222,8 @@ void ttc_callback(void) {
 		} else if (ttc_count <= 130) {
 			led_set(ALL, LED_ON);
 			led_rgb('r');
-		// Traffic starting --> YELLOW
-		} else if (ttc_count <= 160) {
-			led_rgb('y');
-		// Traffic starting --> GREEN
+		// Traffic starting
 		} else {
-			led_set(ALL, LED_OFF);
-			led_rgb('g');
 			ped_inbound = FALSE;
 			change_state();
 		}
@@ -288,7 +273,6 @@ int main() {
 
 	/* Main loop does nothing */
 	while(!done) {
-//		change_state();
 		sleep(1);		// Do nothing and wait for interrupts
 	}
 	printf("[done]\n");
