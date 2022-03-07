@@ -1,4 +1,4 @@
-15:03:31 **** Incremental Build of configuration Debug for project module6_sw ****
+18:17:24 **** Incremental Build of configuration Debug for project module6_sw ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -25,5 +25,5 @@ arm-none-eabi-size module6_sw.elf  |tee "module6_sw.elf.size"
 Finished building: module6_sw.elf.size
  
 
-15:03:33 Build Finished (took 1s.935ms)
+18:17:26 Build Finished (took 2s.181ms)
 

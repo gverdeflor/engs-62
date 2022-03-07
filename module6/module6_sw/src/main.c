@@ -68,17 +68,17 @@ static void change_state() {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
 			led_set(ALL, LED_OFF);
-			printf("TRAFFIC --> TRAIN");
+			printf("TRAFFIC --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
 			led_set(ALL, LED_OFF);\
-			printf("TRAFFIC --> MAINTENANCE");
+			printf("TRAFFIC --> MAINTENANCE\n");
 		} else if (ped_inbound) {
 			state = PEDESTRIAN;
 			servo_set(GATE_OPEN);
 			led_set(ALL, LED_ON);
-			printf("TRAFFIC --> PEDO");
+			printf("TRAFFIC --> PEDO\n");
 		}
 		ttc_reset = true;
 		break;
@@ -95,17 +95,17 @@ static void change_state() {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
 			led_set(ALL, LED_OFF);
-			printf("PEDO --> TRAIN");
+			printf("PEDO --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
 			led_set(ALL, LED_OFF);
-			printf("PEDO --> MAINTENANCE");
+			printf("PEDO --> MAINTENANCE\n");
 		} else if (!ped_inbound) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
 			led_set(ALL, LED_OFF);
-			printf("PEDO --> TRAFFIC");
+			printf("PEDO --> TRAFFIC\n");
 		}
 		ttc_reset = true;
 		break;
@@ -122,12 +122,12 @@ static void change_state() {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
 			led_set(ALL, LED_OFF);
-			printf("TRAIN --> TRAFFIC");
+			printf("TRAIN --> TRAFFIC\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
 			led_set(ALL, LED_OFF);
-			printf("TRAIN --> MAINTENANCE");
+			printf("TRAIN --> MAINTENANCE\n");
 		}
 		ttc_reset = true;
 		break;
@@ -144,12 +144,12 @@ static void change_state() {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
 			led_set(ALL, LED_OFF);
-			printf("MAINTENANCE --> TRAFFIC");
+			printf("MAINTENANCE --> TRAFFIC\n");
 		} else if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
 			led_set(ALL, LED_OFF);
-			printf("MAINTENANCE --> TRAIN");
+			printf("MAINTENANCE --> TRAIN\n");
 		}
 		ttc_reset = true;
 		break;
@@ -183,11 +183,6 @@ static void sw_callback(u32 val) {
 	} else if (val == 1) {
 		// Train Arrival/Clear
 		train_arriving = !train_arriving;
-
-		if (train_arriving) {
-			// TODO: fix train state transition
-			state = TRAIN;
-		}
 		change_state();
 	}
 }
