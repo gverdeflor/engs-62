@@ -67,15 +67,12 @@ static void change_state() {
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-//			printf("TRAFFIC --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-//			printf("TRAFFIC --> MAINTENANCE\n");
 		} else if (ped_inbound) {
 			state = PEDESTRIAN;
 			servo_set(GATE_OPEN);
-//			printf("TRAFFIC --> PEDO\n");
 		}
 		ttc_reset = true;
 		break;
@@ -91,15 +88,12 @@ static void change_state() {
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-//			printf("PEDO --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-//			printf("PEDO --> MAINTENANCE\n");
 		} else if (!ped_inbound) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-//			printf("PEDO --> TRAFFIC\n");
 		}
 		ttc_reset = true;
 		break;
@@ -115,11 +109,9 @@ static void change_state() {
 		if (train_arriving == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-//			printf("TRAIN --> TRAFFIC\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-//			printf("TRAIN --> MAINTENANCE\n");
 		}
 		ttc_reset = true;
 		break;
@@ -135,11 +127,9 @@ static void change_state() {
 		if (maintenance_key == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-//			printf("MAINTENANCE --> TRAFFIC\n")''
 		} else if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-//			printf("MAINTENANCE --> TRAIN\n");
 		}
 		ttc_reset = true;
 		break;
@@ -203,34 +193,38 @@ void ttc_callback(void) {
 
 	// Traffic flowing
 	if (state == TRAFFIC) {
-		printf("TTC Count: %d \n", ttc_count);
+		//printf("TTC Count: %d \n", ttc_count);
 		// Traffic starting --> YELLOW
 		if (ttc_count <= 30) {
 			led_rgb('y');
-		// Traffic stopped --> GREEN
+		// Traffic going --> GREEN
 		} else {
 			led_rgb('g');
 		}
 
 	// Pedestrians walking
 	} else if (state == PEDESTRIAN) {
-		printf("TTC Count: %d \n", ttc_count);
+		//printf("TTC Count: %d \n", ttc_count);
+		// Traffic still going --> GREEN
+		if (ttc_count <= 100) {
+			led_rgb('g');
 		// Traffic stopping --> YELLOW
-		if (ttc_count <= 30) {
+		} else if (ttc_count <= 130) {
 			led_rgb('y');
 		// Traffic stopped --> RED
-		} else if (ttc_count <= 130) {
+		} else if (ttc_count <= 230) {
 			led_set(ALL, LED_ON);
 			led_rgb('r');
 		// Traffic starting
 		} else {
+			led_set(ALL, LED_OFF);
 			ped_inbound = FALSE;
 			change_state();
 		}
 
 	// Train arriving
 	} else if (state == TRAIN) {
-		printf("TTC Count: %d \n", ttc_count);
+		//printf("TTC Count: %d \n", ttc_count);
 		// Traffic stopping --> YELLOW
 		if ((ttc_count) <= 30) {
 			led_rgb('y');
@@ -250,7 +244,6 @@ void ttc_callback(void) {
 		}
 	}
 }
-
 
 int main() {
 
