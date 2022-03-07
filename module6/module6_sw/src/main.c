@@ -67,17 +67,17 @@ static void change_state() {
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("TRAFFIC --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-			led_set(ALL, LED_OFF);\
+//			led_set(ALL, LED_OFF);
 			printf("TRAFFIC --> MAINTENANCE\n");
 		} else if (ped_inbound) {
 			state = PEDESTRIAN;
 			servo_set(GATE_OPEN);
-			led_set(ALL, LED_ON);
+//			led_set(ALL, LED_ON);
 			printf("TRAFFIC --> PEDO\n");
 		}
 		ttc_reset = true;
@@ -94,17 +94,17 @@ static void change_state() {
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("PEDO --> TRAIN\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("PEDO --> MAINTENANCE\n");
 		} else if (!ped_inbound) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("PEDO --> TRAFFIC\n");
 		}
 		ttc_reset = true;
@@ -121,12 +121,12 @@ static void change_state() {
 		if (train_arriving == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("TRAIN --> TRAFFIC\n");
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("TRAIN --> MAINTENANCE\n");
 		}
 		ttc_reset = true;
@@ -143,12 +143,12 @@ static void change_state() {
 		if (maintenance_key == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("MAINTENANCE --> TRAFFIC\n");
 		} else if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
-			led_set(ALL, LED_OFF);
+//			led_set(ALL, LED_OFF);
 			printf("MAINTENANCE --> TRAIN\n");
 		}
 		ttc_reset = true;
@@ -230,12 +230,14 @@ void ttc_callback(void) {
 			led_rgb('y');
 		// Traffic stopped --> RED
 		} else if (ttc_count <= 130) {
+			led_set(ALL, LED_ON);
 			led_rgb('r');
 		// Traffic starting --> YELLOW
 		} else if (ttc_count <= 160) {
 			led_rgb('y');
 		// Traffic starting --> GREEN
 		} else {
+			led_set(ALL, LED_OFF);
 			led_rgb('g');
 			ped_inbound = FALSE;
 			change_state();
