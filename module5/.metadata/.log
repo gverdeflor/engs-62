@@ -7253,3 +7253,4459 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-11: Launc
 
 !ENTRY org.eclipse.core.resources 2 10035 2022-03-07 19:37:45.325
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2022-03-08 13:24:03.554 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:24:04.926
+!MESSAGE Bundle reference:file:com.xilinx.sdx.robot_1.0.0.202110161918.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:24:05.108
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:24:05.829
+!MESSAGE Bundle reference:file:org.eclipse.swtbot.generator_2.4.0.201604200752.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:24:05.835
+!MESSAGE Bundle reference:file:org.eclipse.swtbot.junit4_x_2.4.0.201604200752.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:24:05.840
+!MESSAGE Bundle reference:file:org.eclipse.swtbot.swt.finder_2.4.0.201604200752.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:24:06.071
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-03-08 13:24:15.019
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2022-03-08 13:24:18.903
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:24:26.478
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:24:26.483
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:24:26.488
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.226
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.241
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.331
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.341
+!MESSAGE XSCT Command: [setws /thayerfs/home/f00436n/engs62/module5], Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.350
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.362
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /thayerfs/apps/xilinx/Vitis/current/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:23.368
+!MESSAGE XSCT command with result: [setws /thayerfs/home/f00436n/engs62/module5], Result: [null, ]. Thread: Thread-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:41.358
+!MESSAGE XSCT Command: [::hsi::utils::openhw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Thread: Worker-4: Build Project
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-03-08 13:27:43.329
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-03-08 13:27:43.335
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-03-08 13:27:43.340
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.808
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.826
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.837
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.843
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.850
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-03-08 13:27:43.857
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.880
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:27:43.886
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.040
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.057
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Result: [null, {"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_2": {"hier_name": "axi_gpio_2",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xadc_wiz_0": {"hier_name": "xadc_wiz_0",
+"type": "xadc_wiz",
+"version": "3.3",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_0": {"hier_name": "ps7_uart_0",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ttc_0": {"hier_name": "ps7_ttc_0",
+"type": "ps7_ttc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.065
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.072
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Result: [null, {"device": "7z010",
+"family": "zynq",
+"timestamp": "Sun Feb 20 16:02:47 2022",
+"vivado_version": "2021.2",
+"part": "xc7z010clg400-1",
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.180
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.190
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "50",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.196
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.238
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0], Result: [null, {"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616476,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616488,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616480,
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681728,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681732,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681736,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681740,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682012,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682024,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682016,
+},
+},
+"axi_gpio_2": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747264,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747268,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747272,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747276,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747548,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747560,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747552,
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684864,
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684868,
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684872,
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684880,
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684884,
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684888,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+"xadc_wiz_0": {},
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.257
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.276
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_2_S_AXI": {"name": "axi_gpio_2",
+"base": "0x41220000",
+"high": "0x4122FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x42800000",
+"high": "0x4280FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"xadc_wiz_0_s_axi_lite": {"name": "xadc_wiz_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "s_axi_lite",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.282
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.288
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.294
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.301
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.306
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.312
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.318
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.324
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.329
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.336
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.341
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.349
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.355
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.364
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.370
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.405
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1], Result: [null, {"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616476,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616488,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616480,
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681728,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681732,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681736,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681740,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682012,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682024,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682016,
+},
+},
+"axi_gpio_2": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747264,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747268,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747272,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747276,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747548,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747560,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092747552,
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684864,
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684868,
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684872,
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684880,
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684884,
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1115684888,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+"xadc_wiz_0": {},
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.413
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.435
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_2_S_AXI": {"name": "axi_gpio_2",
+"base": "0x41220000",
+"high": "0x4122FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x42800000",
+"high": "0x4280FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"xadc_wiz_0_s_axi_lite": {"name": "xadc_wiz_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "s_axi_lite",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_0": {"name": "ps7_uart_0",
+"base": "0xE0000000",
+"high": "0xE0000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.440
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.447
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.453
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.460
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.466
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.473
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.479
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.486
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.491
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.505
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.512
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.520
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.528
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa ps7_cortexa9_0], Result: [null, axi_gpio_0 axi_gpio_1 axi_gpio_2 axi_timer_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_ttc_0 ps7_uart_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0 xadc_wiz_0]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.536
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa bit], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.545
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa bit], Result: [null, module5_hw_wrapper.bit]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:08.554
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.214
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.221
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.792
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.798
+!MESSAGE XSCT Command: [version -server], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.804
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.810
+!MESSAGE XSCT Command: [version], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.816
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.828
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.838
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.843
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.865
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.873
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.883
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.888
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.921
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.927
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.937
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.943
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.963
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.969
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.980
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:09.985
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.004
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.013
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.023
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.029
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.048
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.054
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.065
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.070
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.092
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.097
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.119
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.125
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.131
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.147
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.200
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.205
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.270
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:10.275
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.290
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.321
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.331
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.337
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.355
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.370
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.406
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:13.412
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.628
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.659
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.695
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.701
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.791
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.797
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.804
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.810
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.823
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.829
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.838
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:14.844
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.140
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.146
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.157
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.162
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.198
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.204
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.505
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.512
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.536
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.586
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.606
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.611
+!MESSAGE XSCT Command: [con], Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:28:15.635
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:07.576
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-12: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:07.590
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-12: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:07.596
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-12: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:07.604
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-12: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-03-08 13:33:07.610
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:07.621
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-12: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:07.627
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-12: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-03-08 13:33:08.843
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:19.863
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:19.874
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:19.879
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:19.886
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-03-08 13:33:19.891
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:19.900
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:19.906
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.368
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-185
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.377
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-185
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.394
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.417
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.423
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.438
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.444
+!MESSAGE XSCT Command: [version -server], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.450
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.455
+!MESSAGE XSCT Command: [version], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.461
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.467
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.480
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.485
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.510
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.515
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.526
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.532
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.554
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.560
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.572
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.577
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.599
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.605
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.615
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.620
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.639
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.644
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.654
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.659
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.684
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.689
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.700
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.706
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.734
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.738
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.783
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.789
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.795
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.800
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.820
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.826
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.889
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:31.894
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:34.904
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:34.928
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:34.939
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:34.944
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:34.965
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:34.971
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:35.006
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:35.012
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:36.225
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:36.239
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:36.255
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:36.268
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.838
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_0]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.844
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.853
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.858
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.874
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.879
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.890
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:38.895
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.162
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.167
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.181
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.187
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.204
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.209
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.471
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.477
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.503
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.518
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.534
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.539
+!MESSAGE XSCT Command: [con], Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:33:39.573
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:35.964
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:35.976
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:35.982
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:35.989
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-03-08 13:37:35.996
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:36.005
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:36.012
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.847
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-309
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.855
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-309
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.866
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.887
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.893
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.905
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.910
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.916
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.921
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.927
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.932
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.942
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.947
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.965
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.970
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.980
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:53.984
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.003
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.008
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.017
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.022
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.040
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.045
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.060
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.065
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.095
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.100
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.110
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.115
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.134
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.139
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.150
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.155
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.178
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.185
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.212
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.217
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.223
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.228
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.243
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.248
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.309
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:54.314
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.323
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.345
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.356
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.361
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.386
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.392
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.427
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:57.432
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:58.654
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:58.664
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:58.681
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:37:58.687
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.368
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_1]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.373
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.380
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.386
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.404
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.409
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.419
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.424
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.661
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.666
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.677
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.682
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.701
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.706
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.968
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:01.973
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:02.002
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:02.018
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:02.036
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:02.044
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:38:02.073
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:05.466
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:05.477
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:05.483
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:05.491
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-03-08 13:42:05.496
+!MESSAGE Generating MD5 hash for file: /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:05.505
+!MESSAGE XSCT Command: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:05.510
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/sw/module5_hw_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.433
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-395
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.443
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-395
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.454
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.478
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.483
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.496
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.502
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.508
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2.0]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.514
+!MESSAGE XSCT Command: [version], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.520
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 3363252 on 2021-10-14-04:41:01
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.526
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.535
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.548
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.566
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.571
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.581
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.586
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.604
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.609
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.618
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.623
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.643
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.649
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.659
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.664
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.682
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.687
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.697
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.702
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.721
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.727
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.737
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.742
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.760
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.766
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.785
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A6C79EA" && level == 0}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.815
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.820
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.826
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.842
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.847
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.908
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:10.914
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:13.923
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:13.948
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:13.960
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A6C79EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:13.966
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:13.995
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:14.001
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:14.051
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6C79EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A6C79EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:14.058
+!MESSAGE XSCT Command: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:15.268
+!MESSAGE XSCT command with result: [fpga -file /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/bitstream/module5_hw_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:15.288
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:15.302
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:15.308
+!MESSAGE XSCT Command: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.703
+!MESSAGE XSCT command with result: [loadhw -hw /thayerfs/home/f00436n/engs62/module5/module5_hw_wrapper/export/module5_hw_wrapper/hw/module5_hw_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, module5_hw_wrapper_2]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.709
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.716
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.721
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.740
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.745
+!MESSAGE XSCT Command: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.754
+!MESSAGE XSCT command with result: [source /thayerfs/home/f00436n/engs62/module5/module5_sw/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.760
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.993
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:17.999
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.013
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.019
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.037
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.042
+!MESSAGE XSCT Command: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.307
+!MESSAGE XSCT command with result: [dow /thayerfs/home/f00436n/engs62/module5/module5_sw/Debug/module5_sw.elf], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.313
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.344
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.361
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.374
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.380
+!MESSAGE XSCT Command: [con], Thread: Worker-17: Launching SystemDebugger_module5_sw_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:42:18.410
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_module5_sw_system

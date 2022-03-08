@@ -13,10 +13,8 @@ static int wifi_mode = CONFIGURE;				/* WiFi module operation mode */
 
 //static int updateval;
 static int buffcount = 0;						// for receiving
-static u8 *charbuff;							// for sending
 static u8 pingbuff[sizeof(ping_t)];
 static u8 updatebuff[sizeof(update_response_t)];
-static char buffer[64];
 
 static float pot_voltage;
 static int pot_percent;
@@ -94,6 +92,8 @@ void send_update() {
 	update_request.type = UPDATE;
 	update_request.id = SERVER_ID;
 	update_request.value = pot_percent;
+//	update_request.id = 0;
+//	update_request.value = 0;
 
 	wifi_mode = UPDATE;
 	XUartPs_Send(&uart0port, (u8*) &update_request, sizeof(update_request_t));
@@ -116,19 +116,20 @@ void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 	XUartPs *dev = (XUartPs*)CallBackRef;
 //	u8 newline = (u8)'\n';		// newline to signal end of keyboard input
 //	u8 nullchar = (u8)'\0';		// null character to mark enf of buffer
-
+	u8 buffer;
 	// Check if receive data has been triggered
 	if (Event == XUARTPS_EVENT_RECV_DATA) {
-		XUartPs_Recv(dev, charbuff, 1);
+		XUartPs_Recv(dev, &buffer, 1);
 
 		// Read in any keyboard input when in CONFIGURE mode
 		if (wifi_mode == CONFIGURE) {
-			XUartPs_Send(&uart0port, charbuff, 1);
-			// Send a newline when carriage return is received
-			if (*charbuff == (u8)'\r') {
-				*charbuff = (u8)'\n';
-				XUartPs_Send(dev, charbuff, 1);
-			}
+			XUartPs_Send(&uart0port, &buffer, 1);
+		}
+		// Send a newline when carriage return is received
+		XUartPs_Send(&uart1port, &buffer, 1);
+		if (buffer == (u8)'\r') {
+			buffer = (u8)'\n';
+			XUartPs_Send(dev, &buffer, 1);
 		}
 		// Read in numerical keyboard input when in READ mode
 //		if (wifi_mode == READ) {
@@ -169,8 +170,8 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 //				sprintf(buffer,"[PING,id=%d]\r\n", ((ping_t*)pingbuff)->id);
 //				buffer[15] = '\0';
 //				XUartPs_Send(&uart1port, (u8*)buffer, strlen(buffer));
-//				saved_uart_callback(&pingbuff);
-				printf("[PING,id=%d]\n", ((ping_t*)pingbuff)->id);
+				int id =((ping_t*)pingbuff)->id;
+				printf("[PING,id=%d]\n",id);
 			}
 		} else if (wifi_mode == UPDATE) {
 			// Display decoded update message from server
@@ -178,7 +179,6 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 			buffcount++;
 			if (buffcount == sizeof(update_response_t)) {
 				buffcount = 0;
-//				saved_uart_callback(&updatebuff);
 				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
 
 				// Set servo motor according to pot voltage

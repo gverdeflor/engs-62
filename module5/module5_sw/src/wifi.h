@@ -36,7 +36,6 @@ typedef struct {
 /*
  * Initialize UART communication
  */
-//void uart_init(void (*uart_callback)(u8* buffer));
 void uart_init(void);
 
 /*
