@@ -58,78 +58,118 @@ static void change_state() {
 
 	case TRAFFIC:
 
-		printf("[STATE: Traffic]\n");
-		printf("[GATE: Open]\n");
-		printf("[MAINTENANCE: No]\n");
-		printf("[TRAIN: Clear]\n");
-
 		// Look at other inputs to set next state
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
+
+			printf("[STATE: Train]\n");
+			printf("[GATE: Closed]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Arriving]\n\n");
+
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
+
+			printf("[STATE: Maintenance]\n");
+			printf("[GATE: Closed]\n");
+			printf("[MAINTENANCE: Yes]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		} else if (ped_inbound) {
 			state = PEDESTRIAN;
 			servo_set(GATE_OPEN);
+
+			printf("[STATE: Pedestrian]\n");
+			printf("[GATE: Open]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		}
 		ttc_reset = true;
 		break;
 
 	case PEDESTRIAN:
 
-		printf("[STATE: Pedestrian]\n");
-		printf("[GATE: Open]\n");
-		printf("[MAINTENANCE: No]\n");
-		printf("[TRAIN: Clear]\n");
-
 		// Look at other inputs to set next state
 		if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
+
+			printf("[STATE: Train]\n");
+			printf("[GATE: Closed]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Arriving]\n\n");
+
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
+
+			printf("[STATE: Maintenance]\n");
+			printf("[GATE: Closed]\n");
+			printf("[MAINTENANCE: Yes]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		} else if (!ped_inbound) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
+
+			printf("[STATE: Traffic]\n");
+			printf("[GATE: Open]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		}
 		ttc_reset = true;
 		break;
 
 	case TRAIN:
 
-		printf("[STATE: Train]\n");
-		printf("[GATE: Closed]\n");
-		printf("[MAINTENANCE: No]\n");
-		printf("[TRAIN: Arriving]\n");
-
 		// Look at other inputs to set next state
 		if (train_arriving == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
+
+			printf("[STATE: Traffic]\n");
+			printf("[GATE: Open]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		} else if (maintenance_key) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
+
+			printf("[STATE: Maintenance]\n");
+			printf("[GATE: Closed]\n");
+			printf("[MAINTENANCE: Yes]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		}
 		ttc_reset = true;
 		break;
 
 	case MAINTENANCE:
 
-		printf("[STATE: Maintenance]\n");
-		printf("[GATE: Closed]\n");
-		printf("[MAINTENANCE: Yes]\n");
-		printf("[TRAIN: Clear]\n");
-
 		// Look at other inputs to set next state
 		if (maintenance_key == FALSE) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
+
+			printf("[STATE: Traffic]\n");
+			printf("[GATE: Open]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Clear]\n\n");
+
 		} else if (train_arriving) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
+
+			printf("[STATE: Train]\n");
+			printf("[GATE: Closed]\n");
+			printf("[MAINTENANCE: No]\n");
+			printf("[TRAIN: Arriving]\n\n");
+
 		}
 		ttc_reset = true;
 		break;

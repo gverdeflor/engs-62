@@ -1,9 +1,0 @@
-/*
- * wifi.h -- The WiFi module interface
- */
-#pragma once
-
-#include <stdio.h>
-#include <xuartps.h>		/* Xilinx UART functions */
-#include "xparameters.h"  	/* constants used by the hardware */
-#include "xil_types.h"		/* types used by xilinx */

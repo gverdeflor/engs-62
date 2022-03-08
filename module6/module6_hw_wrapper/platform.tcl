@@ -38,3 +38,4 @@ platform config -updatehw {/thayerfs/home/f00436n/engs62/module6/module6/module6
 platform clean
 platform generate
 platform generate -domains standalone_ps7_cortexa9_0 
+platform generate

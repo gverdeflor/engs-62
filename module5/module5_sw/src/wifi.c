@@ -130,7 +130,7 @@ void uart1_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 				XUartPs_Send(dev, charbuff, 1);
 			}
 		}
-//		// Read in numerical keyboard input when in READ mode
+		// Read in numerical keyboard input when in READ mode
 //		if (wifi_mode == READ) {
 //			XUartPs_Send(dev, charbuff, 1);
 //			if (*charbuff == (u8)'\r') {;
@@ -166,11 +166,11 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 			buffcount++;
 			if (buffcount == sizeof(ping_t)) {
 				buffcount = 0;
-				sprintf(buffer,"[PING,id=%d]\r\n", ((ping_t*)pingbuff)->id);
-				buffer[15] = '\0';
-				XUartPs_Send(&uart1port, (u8*)buffer, strlen(buffer));
+//				sprintf(buffer,"[PING,id=%d]\r\n", ((ping_t*)pingbuff)->id);
+//				buffer[15] = '\0';
+//				XUartPs_Send(&uart1port, (u8*)buffer, strlen(buffer));
 //				saved_uart_callback(&pingbuff);
-//				printf("[PING,id=%d]\n", ((ping_t*)pingbuff)->id);
+				printf("[PING,id=%d]\n", ((ping_t*)pingbuff)->id);
 			}
 		} else if (wifi_mode == UPDATE) {
 			// Display decoded update message from server
@@ -179,7 +179,7 @@ void uart0_handler(void *CallBackRef, u32 Event, unsigned int EventData) {
 			if (buffcount == sizeof(update_response_t)) {
 				buffcount = 0;
 //				saved_uart_callback(&updatebuff);
-//				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
+				printf("[UPDATE,id=%d,average=%d,value=%d]\n", ((update_response_t*)updatebuff)->id, ((update_response_t*)updatebuff)->average, ((update_response_t*)updatebuff)->values[25]);
 
 				// Set servo motor according to pot voltage
 				double pot_voltage_to_duty_cycle = (ARC_STOP_DUTY_CYCLE - ARC_START_DUTY_CYCLE) / 100;
