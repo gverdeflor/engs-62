@@ -9,7 +9,7 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source module6_hw_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2748.438 ; gain = 2.016 ; free physical = 5542 ; free virtual = 25672
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2748.438 ; gain = 2.016 ; free physical = 1672 ; free virtual = 22518
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/thayerfs/apps/xilinx/Vivado/current/data/ip'.
@@ -25,28 +25,28 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8090
+INFO: [Synth 8-7075] Helper process launched with PID 5657
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 3886 ; free virtual = 24017
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 151 ; free virtual = 20906
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'module6_hw_wrapper' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/hdl/module6_hw_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'module6_hw' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:805]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_0_1' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_0_1' (1#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_1_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_1_0' (2#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_2_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_2_0' (3#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_3_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_3_0' (4#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_gpio_3_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_timer_0_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_timer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_timer_0_0' (5#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_0_1' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_0_1' (1#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_1_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_1_0' (2#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_2_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_2_0' (3#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_gpio_3_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_gpio_3_0' (4#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_axi_timer_0_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_axi_timer_0_0' (5#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_axi_timer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'module6_hw_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1131]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'module6_hw_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1131]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'module6_hw_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1131]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'module6_hw_axi_timer_0_0' has 26 connections declared, but only 23 given [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1131]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_processing_system7_0_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_processing_system7_0_0' (6#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_processing_system7_0_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_processing_system7_0_0' (6#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'module6_hw_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1155]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'module6_hw_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1155]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'module6_hw_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1155]
@@ -67,24 +67,24 @@ INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1MIP7OX' (11#1) 
 INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1EXJ1BR' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:672]
 INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1EXJ1BR' (12#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:672]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1YJNQG9' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:2471]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_auto_pc_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_auto_pc_0' (13#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_auto_pc_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_auto_pc_0' (13#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1YJNQG9' (14#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:2471]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_xbar_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_xbar_0' (15#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_xbar_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_xbar_0' (15#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_xbar_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'module6_hw_xbar_0' is unconnected for instance 'xbar' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:2430]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'module6_hw_xbar_0' is unconnected for instance 'xbar' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:2430]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'module6_hw_xbar_0' has 40 connections declared, but only 38 given [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:2430]
 INFO: [Synth 8-6155] done synthesizing module 'module6_hw_ps7_0_axi_periph_0' (16#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1414]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_rst_ps7_0_50M_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_rst_ps7_0_50M_0' (17#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_rst_ps7_0_50M_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_rst_ps7_0_50M_0' (17#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_rst_ps7_0_50M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'module6_hw_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1377]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'module6_hw_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1377]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'module6_hw_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1377]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'module6_hw_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1377]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'module6_hw_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1377]
-INFO: [Synth 8-6157] synthesizing module 'module6_hw_xadc_wiz_0_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_xadc_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'module6_hw_xadc_wiz_0_0' (18#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-7995-m210-linux-26/realtime/module6_hw_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'module6_hw_xadc_wiz_0_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'module6_hw_xadc_wiz_0_0' (18#1) [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/.Xil/Vivado-5570-m210-linux-26/realtime/module6_hw_xadc_wiz_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'module6_hw_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1384]
 WARNING: [Synth 8-7071] port 'channel_out' of module 'module6_hw_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1384]
 WARNING: [Synth 8-7071] port 'busy_out' of module 'module6_hw_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [/thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/synth/module6_hw.v:1384]
@@ -200,18 +200,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 4803 ; free virtual = 24935
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 1151 ; free virtual = 21793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 4868 ; free virtual = 25000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 1208 ; free virtual = 21850
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 4868 ; free virtual = 25000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 1208 ; free virtual = 21850
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 4861 ; free virtual = 24993
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2752.883 ; gain = 0.000 ; free physical = 1206 ; free virtual = 21848
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -244,22 +244,22 @@ Parsing XDC File [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/syn
 Finished Parsing XDC File [/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 4764 ; free virtual = 24895
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 1116 ; free virtual = 21758
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 4764 ; free virtual = 24896
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 1117 ; free virtual = 21759
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4843 ; free virtual = 24975
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1197 ; free virtual = 21839
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4843 ; free virtual = 24975
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1197 ; free virtual = 21839
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -538,10 +538,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for module6_hw_i/axi_timer_0. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for module6_hw_i/xadc_wiz_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for module6_hw_i/axi_gpio_3. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4843 ; free virtual = 24975
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1196 ; free virtual = 21838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4842 ; free virtual = 24974
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1195 ; free virtual = 21838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -564,25 +564,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4827 ; free virtual = 24964
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1180 ; free virtual = 21827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4710 ; free virtual = 24847
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1056 ; free virtual = 21704
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4710 ; free virtual = 24847
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1056 ; free virtual = 21704
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -600,37 +600,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -670,16 +670,16 @@ Report Cell Usage:
 |12    |OBUF                            |     8|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4709 ; free virtual = 24845
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1055 ; free virtual = 21702
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 4767 ; free virtual = 24904
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 4769 ; free virtual = 24905
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 1113 ; free virtual = 21761
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2816.598 ; gain = 63.715 ; free physical = 1114 ; free virtual = 21762
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 4856 ; free virtual = 24993
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 1202 ; free virtual = 21850
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 4792 ; free virtual = 24928
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2816.598 ; gain = 0.000 ; free physical = 1138 ; free virtual = 21786
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -687,7 +687,7 @@ Synth Design complete, checksum: 972f5910
 INFO: [Common 17-83] Releasing license: Synthesis
 65 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2816.598 ; gain = 68.160 ; free physical = 4986 ; free virtual = 25122
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2816.598 ; gain = 68.160 ; free physical = 1332 ; free virtual = 21980
 INFO: [Common 17-1381] The checkpoint '/thayerfs/home/f00436n/engs62/module6/module6/module6.runs/synth_1/module6_hw_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file module6_hw_wrapper_utilization_synth.rpt -pb module6_hw_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Mar  1 14:51:27 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  8 13:51:51 2022...

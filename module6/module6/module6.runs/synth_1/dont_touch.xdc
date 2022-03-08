@@ -36,10 +36,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==module6_hw_
 # IP: bd/module6_hw/ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==module6_hw_xadc_wiz_0_0 || ORIG_REF_NAME==module6_hw_xadc_wiz_0_0} -quiet] -quiet
 
-# IP: bd/module6_hw/ip/module6_hw_auto_pc_0/module6_hw_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==module6_hw_auto_pc_0 || ORIG_REF_NAME==module6_hw_auto_pc_0} -quiet] -quiet
-
 # IP: bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==module6_hw_axi_gpio_3_0 || ORIG_REF_NAME==module6_hw_axi_gpio_3_0} -quiet] -quiet
+
+# IP: bd/module6_hw/ip/module6_hw_auto_pc_0/module6_hw_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==module6_hw_auto_pc_0 || ORIG_REF_NAME==module6_hw_auto_pc_0} -quiet] -quiet
 
 # XDC: /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/module6_hw_ooc.xdc

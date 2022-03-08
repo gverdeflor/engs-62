@@ -2769,3 +2769,60 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-23: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:22:33.381
 !MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-354
+!SESSION 2022-03-08 13:54:52.345 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:54:53.619
+!MESSAGE Bundle reference:file:com.xilinx.sdx.robot_1.0.0.202110161918.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:54:53.818
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:54:54.650
+!MESSAGE Bundle reference:file:org.eclipse.swtbot.generator_2.4.0.201604200752.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:54:54.659
+!MESSAGE Bundle reference:file:org.eclipse.swtbot.junit4_x_2.4.0.201604200752.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:54:54.669
+!MESSAGE Bundle reference:file:org.eclipse.swtbot.swt.finder_2.4.0.201604200752.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-03-08 13:54:54.920
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-03-08 13:55:12.622
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:21.707
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:21.713
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:21.719
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.423
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.430
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.435
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.440
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.446
+!MESSAGE XSCT Command: [setws /thayerfs/home/f00436n/engs62/module6], Thread: Thread-29
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.452
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /thayerfs/apps/xilinx/Vitis/current/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-03-08 13:55:25.457
+!MESSAGE XSCT command with result: [setws /thayerfs/home/f00436n/engs62/module6], Result: [null, ]. Thread: Thread-29

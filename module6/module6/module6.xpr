@@ -92,6 +92,18 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_axi_gpio_0_1/module6_hw_axi_gpio_0_1.xci">
+          <Proxy FileSetName="module6_hw_axi_gpio_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_processing_system7_0_0/module6_hw_processing_system7_0_0.xci">
+          <Proxy FileSetName="module6_hw_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_xbar_0/module6_hw_xbar_0.xci">
+          <Proxy FileSetName="module6_hw_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_rst_ps7_0_50M_0/module6_hw_rst_ps7_0_50M_0.xci">
+          <Proxy FileSetName="module6_hw_rst_ps7_0_50M_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_axi_gpio_1_0/module6_hw_axi_gpio_1_0.xci">
           <Proxy FileSetName="module6_hw_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
@@ -101,23 +113,11 @@
         <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_axi_timer_0_0/module6_hw_axi_timer_0_0.xci">
           <Proxy FileSetName="module6_hw_axi_timer_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0.xci">
-          <Proxy FileSetName="module6_hw_xadc_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_processing_system7_0_0/module6_hw_processing_system7_0_0.xci">
-          <Proxy FileSetName="module6_hw_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_axi_gpio_0_1/module6_hw_axi_gpio_0_1.xci">
-          <Proxy FileSetName="module6_hw_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_xbar_0/module6_hw_xbar_0.xci">
-          <Proxy FileSetName="module6_hw_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_rst_ps7_0_50M_0/module6_hw_rst_ps7_0_50M_0.xci">
-          <Proxy FileSetName="module6_hw_rst_ps7_0_50M_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0.xci">
           <Proxy FileSetName="module6_hw_axi_gpio_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="module6_hw.bd" FileRelPathName="ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="module6_hw_xadc_wiz_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/module6_hw/hdl/module6_hw_wrapper.v">
@@ -345,9 +345,7 @@
     </Run>
     <Run Id="module6_hw_axi_gpio_3_0_synth_1" Type="Ft3:Synth" SrcSet="module6_hw_axi_gpio_3_0" Part="xc7z010clg400-1" ConstrsSet="module6_hw_axi_gpio_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/module6_hw_axi_gpio_3_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module6_hw_axi_gpio_3_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -511,9 +509,7 @@
     </Run>
     <Run Id="module6_hw_axi_gpio_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="module6_hw_axi_gpio_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="module6_hw_axi_gpio_3_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/module6_hw_axi_gpio_3_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

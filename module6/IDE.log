@@ -5399,3 +5399,12 @@ con
 
 13:08:20 INFO  : Launch script is exported to file '/thayerfs/home/f00436n/engs62/module6/module6_sw_system/_ide/scripts/systemdebugger_module6_sw_system_standalone.tcl'
 13:22:33 INFO  : Disconnected from the channel tcfchan#5.
+13:55:14 INFO  : Logs will be stored at '/thayerfs/home/f00436n/engs62/module6/IDE.log'.
+13:55:15 INFO  : Launching XSCT server: xsct -n  -interactive /thayerfs/home/f00436n/engs62/module6/temp_xsdb_launch_script.tcl
+13:55:18 INFO  : Platform repository initialization has completed.
+13:55:18 INFO  : Registering command handlers for Vitis TCF services
+13:55:21 INFO  : XSCT server has started successfully.
+13:55:25 INFO  : plnx-install-location is set to ''
+13:55:25 INFO  : Successfully done setting XSCT server connection channel  
+13:55:25 INFO  : Successfully done query RDI_DATADIR 
+13:55:25 INFO  : Successfully done setting workspace for the tool. 

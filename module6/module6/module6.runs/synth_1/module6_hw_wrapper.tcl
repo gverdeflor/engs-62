@@ -107,10 +107,10 @@ set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_timer_0_0/module6_hw_axi_timer_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_xadc_wiz_0_0/module6_hw_xadc_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_auto_pc_0/module6_hw_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0_board.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_axi_gpio_3_0/module6_hw_axi_gpio_3_0.xdc]
+set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/ip/module6_hw_auto_pc_0/module6_hw_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /thayerfs/home/f00436n/engs62/module6/module6/module6.gen/sources_1/bd/module6_hw/module6_hw_ooc.xdc]
 
 OPTRACE "Adding files" END { }
