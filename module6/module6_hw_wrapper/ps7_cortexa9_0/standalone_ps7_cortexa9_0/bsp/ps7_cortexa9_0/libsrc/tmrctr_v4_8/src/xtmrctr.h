@@ -242,7 +242,8 @@ typedef struct {
 } XTmrCtrStats;
 
 /**
- * The XTmrCtr driver instance data. The user is required to allocate a
+ * The XTmrCtr driver instance data. The us
+ * er is required to allocate a
  * variable of this type for every timer/counter device in the system. A
  * pointer to a variable of this type is then passed to the driver API
  * functions.

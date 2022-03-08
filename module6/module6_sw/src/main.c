@@ -25,7 +25,7 @@
 #include "ttc.h"							/* TTC module interface */
 #include "servo.h"							/* servo module interface */
 #include "adc.h"							/* ADC module interface */
-//#include "wifi.h"							/* WiFi module interface */
+#include "wifi.h"							/* WiFi module interface */
 
 /* Possible States */
 #define TRAFFIC 0
@@ -43,9 +43,11 @@ static int ttc_count;
 static bool ttc_reset;
 
 /* Control Signals */
+static bool ped_inbound = FALSE;
 static bool train_arriving = FALSE;
 static bool maintenance_key = FALSE;
-static bool ped_inbound = FALSE;
+static int crossing_status = -1;
+static int prev_crossing_status = -1;
 
 /* Controller State */
 static int state;
@@ -59,7 +61,7 @@ static void change_state() {
 	case TRAFFIC:
 
 		// Look at other inputs to set next state
-		if (train_arriving) {
+		if (train_arriving) { // || crossing_status == 1) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
 
@@ -67,8 +69,8 @@ static void change_state() {
 			printf("[GATE: Closed]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Arriving]\n\n");
-
-		} else if (maintenance_key) {
+			ttc_reset = true;
+		} else if ((maintenance_key)) { // || crossing_status == 2) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
 
@@ -76,7 +78,7 @@ static void change_state() {
 			printf("[GATE: Closed]\n");
 			printf("[MAINTENANCE: Yes]\n");
 			printf("[TRAIN: Clear]\n\n");
-
+			ttc_reset = true;
 		} else if (ped_inbound) {
 			state = PEDESTRIAN;
 			servo_set(GATE_OPEN);
@@ -85,15 +87,14 @@ static void change_state() {
 			printf("[GATE: Open]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Clear]\n\n");
-
+			ttc_reset = true;
 		}
-		ttc_reset = true;
 		break;
 
 	case PEDESTRIAN:
 
 		// Look at other inputs to set next state
-		if (train_arriving) {
+		if (train_arriving) { // || crossing_status == 1) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
 
@@ -101,8 +102,8 @@ static void change_state() {
 			printf("[GATE: Closed]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Arriving]\n\n");
-
-		} else if (maintenance_key) {
+			ttc_reset = true;
+		} else if ((maintenance_key)) { //  || crossing_status == 2) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
 
@@ -110,7 +111,7 @@ static void change_state() {
 			printf("[GATE: Closed]\n");
 			printf("[MAINTENANCE: Yes]\n");
 			printf("[TRAIN: Clear]\n\n");
-
+			ttc_reset = true;
 		} else if (!ped_inbound) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
@@ -119,15 +120,14 @@ static void change_state() {
 			printf("[GATE: Open]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Clear]\n\n");
-
+			ttc_reset = true;
 		}
-		ttc_reset = true;
 		break;
 
 	case TRAIN:
 
 		// Look at other inputs to set next state
-		if (train_arriving == FALSE) {
+		if (!train_arriving) { // || crossing_status == 0) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
 
@@ -135,24 +135,23 @@ static void change_state() {
 			printf("[GATE: Open]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Clear]\n\n");
-
-		} else if (maintenance_key) {
+			ttc_reset = true;
+		} else if ((maintenance_key)) { // || crossing_status == 2) {
 			state = MAINTENANCE;
 			servo_set(GATE_CLOSED);
+			ttc_reset = true;
 
 			printf("[STATE: Maintenance]\n");
 			printf("[GATE: Closed]\n");
 			printf("[MAINTENANCE: Yes]\n");
 			printf("[TRAIN: Clear]\n\n");
-
 		}
-		ttc_reset = true;
 		break;
 
 	case MAINTENANCE:
 
 		// Look at other inputs to set next state
-		if (maintenance_key == FALSE) {
+		if ((!maintenance_key)) { // || crossing_status == 0) {
 			state = TRAFFIC;
 			servo_set(GATE_OPEN);
 
@@ -160,8 +159,8 @@ static void change_state() {
 			printf("[GATE: Open]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Clear]\n\n");
-
-		} else if (train_arriving) {
+			ttc_reset = true;
+		} else if (train_arriving) { // || crossing_status == 1) {
 			state = TRAIN;
 			servo_set(GATE_CLOSED);
 
@@ -169,9 +168,8 @@ static void change_state() {
 			printf("[GATE: Closed]\n");
 			printf("[MAINTENANCE: No]\n");
 			printf("[TRAIN: Arriving]\n\n");
-
+			ttc_reset = true;
 		}
-		ttc_reset = true;
 		break;
 
 	}
@@ -222,6 +220,33 @@ void turn_gate(void) {
 }
 
 void ttc_callback(void) {
+
+//	// Polling remote substation status database
+//	send_update();
+//	crossing_status = get_crossing_status();
+//
+//	if (prev_crossing_status != crossing_status) {
+//		printf("Crossing Status: %d\n", crossing_status);
+//		switch(crossing_status) {
+//			case 0:
+//				train_arriving = FALSE;
+//				maintenance_key = FALSE;
+//				change_state();
+//				break;
+//			case 1:
+//				train_arriving = TRUE;
+//				maintenance_key = FALSE;
+//				change_state();
+//				break;
+//			case 2:
+//				train_arriving = FALSE;
+//				maintenance_key = TRUE;
+//				change_state();
+//				break;
+//		}
+//		send_update();
+//		prev_crossing_status = crossing_status;
+//	}
 
 	// Reset TTC counter once state changes
 	if (ttc_reset) {
@@ -297,7 +322,7 @@ int main() {
 	ttc_start();
 	adc_init();
 	servo_init();
-	//wifi_init();
+	uart_init();
 
 	/* Set initial state */
 	state = TRAFFIC;
@@ -317,7 +342,7 @@ int main() {
 	io_sw_close();
 	ttc_stop();
 	ttc_close();
-	//wifi_close();
+	uart_close();
 	gic_close();
 
 	cleanup_platform();
